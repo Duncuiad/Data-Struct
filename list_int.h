@@ -5,13 +5,13 @@
 
 #include <stdio.h>
 
-typedef struct Link_TYPE {
-  Link_TYPE *predecessor; /* BROKEN */
+typedef struct _Link_TYPE {
+  struct _Link_TYPE *predecessor;
   TYPE data;
-  Link_TYPE *successor;
+  struct _Link_TYPE *successor;
 } Link_TYPE;
 
-typedef struct List_TYPE {
+typedef struct _List_TYPE {
   Link_TYPE *head;
   Link_TYPE *tail;
 } List_TYPE;

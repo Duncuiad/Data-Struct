@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#include "list.h"
+#include "list_int.h"
 #include "graph.h"
 
 int main() {
