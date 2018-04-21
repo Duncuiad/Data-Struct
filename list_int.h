@@ -5,11 +5,17 @@
 
 #include <stdio.h>
 
-typedef struct List {
-  /* I'll probably implement a two-way list */
+typedef struct Link_TYPE {
+  Link_TYPE *predecessor; /* BROKEN */
+  TYPE data;
+  Link_TYPE *successor;
+} Link_TYPE;
 
-} List;
+typedef struct List_TYPE {
+  Link_TYPE *head;
+  Link_TYPE *tail;
+} List_TYPE;
 
-List initList();
+List_TYPE initList();
 
 #endif
