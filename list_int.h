@@ -1,5 +1,7 @@
-#ifndef LIST_H
-#define LIST_H
+#ifndef LIST_INT_H
+#define LIST_INT_H
+
+#define TYPE int
 
 #include <stdio.h>
 
@@ -8,5 +10,6 @@ typedef struct List {
 
 } List;
 
+List initList();
 
 #endif

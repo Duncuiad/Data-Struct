@@ -3,7 +3,7 @@
 
 #include  <stdio.h>
 
-#include "list.h"
+#include "list_int.h"
 
 
 #endif
