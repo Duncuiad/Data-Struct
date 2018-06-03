@@ -1,12 +1,12 @@
 # Macros
 CC = gcc
-CFLAGS = -std=c90 -pedantic
-OBJ = list_int.o graph.o
+CFLAGS = -std=c89 -pedantic
+OBJ = essentials.o graph.o
 HEAD = $(OBJ:.o=.h)
 LIB = -lm
 
 # Dependencies
-graph.o: list_int.h
+graph.o: essentials.h
 test.o: $(HEAD)
 
 # Commands
