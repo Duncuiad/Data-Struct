@@ -1,29 +1,12 @@
 #include "essentials.h"
 
-/* STRUTTURE DATI */
-
-struct _List {
-  int allocated;
-  int active;
-  int *array;
-}; /* a livello di implementazione si tratta di una tabella */
-
-struct _Node {
-  char name[MAX_STR_LEN]; /* parola rappresentata dal nodo */
-  int cComponent; /* componente connessa a cui appartiene il nodo */
-  List adjacency;
-};
-
 /* METODI LIST */
 
-void constrList(List *list, int desiredLength) {
+void constrList(List *list, unsigned int desiredLength) {
   int i = 0; /* counter */
   int base = 1; /* variabile di appoggio per una potenza di 2 */
-  if (desiredLength < 0) {
-    fprintf(stderr, "Errore: lista inizializzata con lunghezza negativa");
-    exit(-1);
-  }
-  else if (desiredLength == 0) {
+
+  if (desiredLength == 0) {
     list -> allocated = 0;
     list -> active = 0;
     list -> array = NULL;
@@ -49,18 +32,19 @@ void destrList(List *list) {
 void enqueueList(List *list, int value) {
   int *pointer; /* di appoggio */
   int i; /* counter */
+  int n = list -> allocated;
 
   /* controllo che la tabella non sia piena, e nel caso rialloco il doppio della memoria */
-  if (list -> active == list -> allocated) {
+  if (list -> active == n) {
 
     pointer = list -> array; /* tiene traccia del vettore vecchio */
-    list -> array = (int*) malloc(2 * (list -> allocated) * sizeof(int));
+    list -> array = (int*) malloc((n == 0 ? 1 : 2 * n) * sizeof(int));
 
-    for (i = 0; i < list -> allocated; i++) {
+    for (i = 0; i < n; i++) {
       (list -> array)[i] = pointer[i]; /* copia puntualmente il vettore vecchio su quello nuovo */
     }
 
-    list -> allocated = 2 * (list -> allocated); /* aggiorna la dimensione allocata */
+    list -> allocated = (n == 0 ? 1 : 2 * n); /* aggiorna la dimensione allocata */
     free(pointer); /* elimina il vettore vecchio */
   }
 
@@ -71,16 +55,33 @@ void enqueueList(List *list, int value) {
 }
 
 
-int readList(List *list, int index) {
-  if (index < 0) {
-    fprintf(stderr, "Errore: lettura lista con indice di posizione negativo");
-    exit(-1);
-  }
+int readList(List *list, unsigned int index) {
   if (index >= (list -> active)) {
-    fprintf(stderr, "Errore: lettura lista con indice di posizione out of bounds");
+    fprintf(stderr, "Errore: lettura lista con indice di posizione troppo grande");
     exit(-1);
   }
   return (list -> array)[index];
+}
+
+void printList(List *list) {
+  int i;
+  for (i = 0; i < list -> active; i++) {
+    printf("[%d]: %d\n", i, readList(list, i));
+  }
+}
+
+void lightPrintList(List *list) {
+  int i;
+  int n = list -> active;
+  for (i = 0; i < n; i++) {
+    printf("%d", readList(list, i));
+    if (i != n-1) {
+      printf(", ");
+    }
+    else {
+      printf("\n");
+    }
+  }
 }
 
 /* METODI NODE */
@@ -99,4 +100,10 @@ void destrNode(Node *node) {
 
 int getDegree(Node *node) {
   return (node -> adjacency).active;
+}
+
+void printNode(Node *node) {
+  printf("%s, comp. conn.: %d, adiac.: ", node -> name, node -> cComponent);
+  lightPrintList(&node -> adjacency);
+  return;
 }
