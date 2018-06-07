@@ -107,3 +107,5 @@ void printNode(Node *node) {
   lightPrintList(&node -> adjacency);
   return;
 }
+
+/* FUNZIONI VARIE */

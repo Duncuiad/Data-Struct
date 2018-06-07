@@ -4,6 +4,7 @@
 #include  <stdio.h>
 
 #include "essentials.h"
+#include "string.h"
 
 typedef struct _Graph Graph;
 
@@ -30,6 +31,8 @@ void constrGraph(Graph *graph);
 void destrGraph(Graph *graph);
 void addNode(Graph *graph, char *word);
 void addEdge(Graph *graph, unsigned int firstNode, unsigned int secondNode);
-void printGraph(Graph *graph);
+void importNodes(Graph *graph, char *fileName);
+void checkForEdges(Graph *graph);
+void printGraph(Graph *graph, const char option);
 
 #endif

@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_STR_LEN 100
+#define MAX_STR_LEN 50
 #define TRUE 1
 #define FALSE 0
 
@@ -40,5 +40,7 @@ void constrNode(Node *node, char *chosenName);
 void destrNode(Node *node);
 int getDegree(Node *node);
 void printNode(Node *node);
+
+/* FUNZIONI VARIE */
 
 #endif

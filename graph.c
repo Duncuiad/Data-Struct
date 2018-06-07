@@ -67,15 +67,69 @@ void addEdge(Graph *graph, unsigned int firstNode, unsigned int secondNode) {
   enqueueList(&((graph -> nodeList)[firstNode].adjacency), secondNode);
   enqueueList(&((graph -> nodeList)[secondNode].adjacency), firstNode);
 
+  graph -> edgeCount = graph -> edgeCount + 1;
+
   return;
 }
 
-void printGraph(Graph *graph) {
+void importNodes(Graph *graph, char *fileName) {
+  FILE *fileStream;
+  int check = 0;
+  char temp[MAX_STR_LEN];
+
+  /* apro lo stream */
+  fileStream = fopen(fileName, "r");
+
+  while (TRUE) {
+    check = fscanf(fileStream, "%s", temp);
+    if (check != 1) {
+      break;  /* l'unica possibilita' che il ciclo continui all'infinito (check == 1) e' che il file non finisca mai */
+    }
+    addNode(graph, temp);
+  }
+
+  fclose(fileStream);
+
+  graph -> nodesReady = TRUE;
+
+  return;
+}
+
+void checkForEdges(Graph *graph) {
+  int i;
+  int j;
+  int n = graph -> nodeCount;
+
+  if (graph -> nodesReady == FALSE) {
+    fprintf(stderr, "Errore [graph.c - checkForEdges]: non ho ancora importato i nodi");
+    exit(-1);
+  }
+
+  for (i = 0; i < n; i++) {
+    for (j = i + 1; j < n; j++) {
+
+      if (areRelated((graph -> nodeList)[i].name, (graph -> nodeList)[j].name)) {
+        addEdge(graph, i, j);
+      }
+    }
+  }
+
+  graph -> edgesReady = TRUE;
+  return;
+}
+
+
+void printGraph(Graph *graph, const char option) {
+  /* options: "s" - silent; "n" - normal */
   int i;
   int n = graph -> nodeCount;
-  for (i = 0; i < n; i++) {
-    printf("[%d]: ", i);
-    printNode(&(graph -> nodeList)[i]);
+  printf("\nGrafo. Nodi: %d. Lati: %d. Componenti connesse: %d.", n, graph -> edgeCount, graph -> componentCount);
+  if (option != 's') {
+    for (i = 0; i < n; i++) {
+      printf("\n[%d]: ", i);
+      printNode(&(graph -> nodeList)[i]);
+    }
   }
+  printf("\n");
   return;
 }

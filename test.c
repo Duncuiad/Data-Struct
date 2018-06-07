@@ -1,27 +1,30 @@
 #include <stdio.h>
 
 #include "essentials.h"
+#include "string.h"
 #include "graph.h"
 
 int main() {
 
-  int i;
-  List lista;
   Graph grafo;
 
-  constrList(&lista, 0);
-  constrGraph(&grafo);
+  Bool temp = areRelated("casa", "caste");
 
-  for (i = 0; i<10; i++) {
-    enqueueList(&lista, 100-i);
+  if (temp==TRUE) {
+    printf("Yes");
+  }
+  else {
+    printf("No");
   }
 
-  addNode(&grafo, "Nodo");
-  grafo.nodeList[0].adjacency = lista;
+  constrGraph(&grafo);
 
-  printGraph(&grafo);
+  importNodes(&grafo, "./files/English.txt");
+  /* checkForEdges(&grafo); */
+
+  printGraph(&grafo, 's');
 
   destrGraph(&grafo);
-  destrList(&lista);
+
   return 0;
 }
