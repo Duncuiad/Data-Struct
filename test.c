@@ -8,21 +8,9 @@ int main() {
 
   Graph grafo;
 
-  Bool temp = areRelated("casa", "caste");
-
-  if (temp==TRUE) {
-    printf("Yes");
-  }
-  else {
-    printf("No");
-  }
-
   constrGraph(&grafo);
 
-  importNodes(&grafo, "./files/English.txt");
-  checkForEdges(&grafo);
-
-  saveGraph(&grafo, "./files/English.dat");
+  loadGraph(&grafo, "./files/English.dat");
 
   printGraph(&grafo, 's');
 

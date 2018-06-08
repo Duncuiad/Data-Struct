@@ -38,7 +38,7 @@ Bool areRelated(const char *firstWord, const char *secondWord) {
     }
   }
 
-  if (n > m) {
+  else if (n > m) {
     for (i = 0; i < n; i++) {
       deleteAt(firstWord, temp, i);
       if (strcmp(secondWord, temp) == 0) {
@@ -47,7 +47,7 @@ Bool areRelated(const char *firstWord, const char *secondWord) {
     }
   }
 
-  if (n == m) {
+  else if (n==m) {
     for (i = 0; i < n; i++) {
       deleteAt(firstWord, temp, i);
       deleteAt(secondWord, temp2, i);

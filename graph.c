@@ -72,13 +72,19 @@ void addEdge(Graph *graph, unsigned int firstNode, unsigned int secondNode) {
   return;
 }
 
-void importNodes(Graph *graph, char *fileName) {
+void importNodes(Graph *graph, const char *fileName) {
   FILE *fileStream;
   int check = 0;
   char temp[MAX_STR_LEN];
 
   /* apro lo stream */
   fileStream = fopen(fileName, "r");
+
+  /* controllo che il file esista */
+  if (fileStream == NULL) {
+    fprintf(stderr, "Errore [graph.c - importNodes]: non esiste un file con questo nome (%s)", fileName);
+    exit(-1);
+  }
 
   while (TRUE) {
     check = fscanf(fileStream, "%s", temp);
@@ -111,7 +117,7 @@ void checkForEdges(Graph *graph) {
     printf("\rSto aggiungendo i lati: %f%% ", 100*((float) i)/n/(n-1)*(2*n-i+1)); /* loading bar */
     for (j = i + 1; j < n; j++) {
 
-      if (areRelated((graph -> nodeList)[i].name, (graph -> nodeList)[j].name)==TRUE) {
+      if (areRelated((graph -> nodeList)[i].name, (graph -> nodeList)[j].name)) {
         addEdge(graph, i, j);
       }
     }
@@ -124,6 +130,13 @@ void checkForEdges(Graph *graph) {
   return;
 }
 
+void importGraph(Graph *graph, const char * fileName) {
+
+  importNodes(graph, fileName);
+  checkForEdges(graph);
+
+  return;
+}
 
 void printGraph(Graph *graph, const char option) {
   /* options: "s" - silent; "n" - normal */
@@ -158,7 +171,7 @@ void saveGraph(Graph *graph, const char *fileName) {
   for (i = 0; i < n; i++) {
     tempNode = &(graph -> nodeList)[i];
     l = getDegree(tempNode);
-    fprintf(fileStream, "%s %d ", tempNode -> name, tempNode -> cComponent);
+    fprintf(fileStream, "%s %d %d ", tempNode -> name, tempNode -> cComponent, l);
     for (j = 0; j < l; j++) {
       fprintf(fileStream, "%d ", readList(&(tempNode -> adjacency), j));
     }
@@ -169,11 +182,16 @@ void saveGraph(Graph *graph, const char *fileName) {
 
   return;
 }
+
 void loadGraph(Graph *graph, const char *fileName) {
   FILE *fileStream;
   int i;
+  int j;
   int n; /* nodeCount; */
-  Node tempNode; /* i-esimo nodo */
+  Node *tempNode; /* i-esimo nodo */
+  int l; /* grado dell'i-esimo nodo */
+  int adjacent;
+  char tempString[MAX_STR_LEN];
 
   /* resetto il grafo (se era gia' vuoto ci mette comunque pochissimo tempo) */
   destrGraph(graph);
@@ -182,11 +200,31 @@ void loadGraph(Graph *graph, const char *fileName) {
   /* apro lo stream */
   fileStream = fopen(fileName, "r");
 
-  fscanf(fileStream, "%d\n%d\n%d\n", graph -> nodeCount, graph -> edgeCount, graph -> componentCount);
-  n = graph -> nodeCount;
+  /* controllo che il file esista */
+  if (fileStream == NULL) {
+    fprintf(stderr, "Errore [graph.c - loadGraph]: non esiste un file con questo nome (%s)", fileName);
+    exit(-1);
+  }
+
+  /* registro i dati strutturali del grafo */
+  fscanf(fileStream, "%d %d %d ", &n, &(graph -> edgeCount), &(graph -> componentCount)); /* nodeCount deve essere aggiornato da addNode; gli altri due non influiscono sul codice */
 
   /* Body */
-  /* MANCA TUTTA LA PARTE RELATIVA AI NODI */
+
+  for (i = 0; i < n; i++) {
+    /* crea l'i-esimo nodo */
+    fscanf(fileStream, "%s", tempString);
+    addNode(graph, tempString);
+    tempNode = &((graph -> nodeList)[i]);
+    fscanf(fileStream, "%d %d ", &(tempNode -> cComponent), &l);
+
+    /* popola la sua lista di adiacenza */
+    for (j = 0; j < l; j++) {
+      fscanf(fileStream, "%d ", &adjacent);
+      enqueueList(&(tempNode -> adjacency), adjacent);
+    }
+
+  }
 
   fclose(fileStream);
 
