@@ -100,13 +100,15 @@ void checkForEdges(Graph *graph) {
   int j;
   int n = graph -> nodeCount;
 
+  /* Check state */
   if (graph -> nodesReady == FALSE) {
     fprintf(stderr, "Errore [graph.c - checkForEdges]: non ho ancora importato i nodi");
     exit(-1);
   }
 
+  /* Body */
   for (i = 0; i < n; i++) {
-    printf("\rSto aggiungendo i lati: %f%% ", 100*((float) i)/n/(n-1)*(2*n-i+1));
+    printf("\rSto aggiungendo i lati: %f%% ", 100*((float) i)/n/(n-1)*(2*n-i+1)); /* loading bar */
     for (j = i + 1; j < n; j++) {
 
       if (areRelated((graph -> nodeList)[i].name, (graph -> nodeList)[j].name)==TRUE) {
@@ -117,6 +119,7 @@ void checkForEdges(Graph *graph) {
 
   printf("\r                                      "); /* cosmetico */
 
+  /* Update state */
   graph -> edgesReady = TRUE;
   return;
 }
@@ -148,8 +151,10 @@ void saveGraph(Graph *graph, const char *fileName) {
   /* apro lo stream */
   fileStream = fopen(fileName, "w");
 
+  /* la prima parte del file conterra' le informazioni strutturali del grafo */
   fprintf(fileStream, "%d\n%d\n%d\n", graph -> nodeCount, graph -> edgeCount, graph -> componentCount);
 
+  /* la seconda parte del file conterra' l'elenco dei nodi con le loro liste di adiacenza */
   for (i = 0; i < n; i++) {
     tempNode = &(graph -> nodeList)[i];
     l = getDegree(tempNode);
@@ -160,6 +165,33 @@ void saveGraph(Graph *graph, const char *fileName) {
     fprintf(fileStream, "\n");
   }
 
+  fclose(fileStream);
+
   return;
 }
-void loadGraph(Graph *graph, const char *fileName);
+void loadGraph(Graph *graph, const char *fileName) {
+  FILE *fileStream;
+  int i;
+  int n; /* nodeCount; */
+  Node tempNode; /* i-esimo nodo */
+
+  /* resetto il grafo (se era gia' vuoto ci mette comunque pochissimo tempo) */
+  destrGraph(graph);
+  constrGraph(graph);
+
+  /* apro lo stream */
+  fileStream = fopen(fileName, "r");
+
+  fscanf(fileStream, "%d\n%d\n%d\n", graph -> nodeCount, graph -> edgeCount, graph -> componentCount);
+  n = graph -> nodeCount;
+
+  /* Body */
+  /* MANCA TUTTA LA PARTE RELATIVA AI NODI */
+
+  fclose(fileStream);
+
+  /* Update state */
+  graph -> nodesReady = TRUE;
+  graph -> edgesReady = TRUE;
+  return;
+}
