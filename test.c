@@ -20,7 +20,9 @@ int main() {
   constrGraph(&grafo);
 
   importNodes(&grafo, "./files/English.txt");
-  /* checkForEdges(&grafo); */
+  checkForEdges(&grafo);
+
+  saveGraph(&grafo, "./files/English.dat");
 
   printGraph(&grafo, 's');
 

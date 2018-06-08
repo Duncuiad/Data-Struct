@@ -34,5 +34,7 @@ void addEdge(Graph *graph, unsigned int firstNode, unsigned int secondNode);
 void importNodes(Graph *graph, char *fileName);
 void checkForEdges(Graph *graph);
 void printGraph(Graph *graph, const char option);
+void saveGraph(Graph *graph, const char *fileName);
+void loadGraph(Graph *graph, const char *fileName);
 
 #endif

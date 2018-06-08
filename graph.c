@@ -106,13 +106,16 @@ void checkForEdges(Graph *graph) {
   }
 
   for (i = 0; i < n; i++) {
+    printf("\rSto aggiungendo i lati: %f%% ", 100*((float) i)/n/(n-1)*(2*n-i+1));
     for (j = i + 1; j < n; j++) {
 
-      if (areRelated((graph -> nodeList)[i].name, (graph -> nodeList)[j].name)) {
+      if (areRelated((graph -> nodeList)[i].name, (graph -> nodeList)[j].name)==TRUE) {
         addEdge(graph, i, j);
       }
     }
   }
+
+  printf("\r                                      "); /* cosmetico */
 
   graph -> edgesReady = TRUE;
   return;
@@ -133,3 +136,30 @@ void printGraph(Graph *graph, const char option) {
   printf("\n");
   return;
 }
+
+void saveGraph(Graph *graph, const char *fileName) {
+  FILE *fileStream;
+  int i;
+  int j; /* contatore per la lista di adiacenza */
+  int n = graph -> nodeCount;
+  Node *tempNode; /* i-esimo nodo */
+  int l; /* lunghezza della lista di adiacenza per ogni nodo */
+
+  /* apro lo stream */
+  fileStream = fopen(fileName, "w");
+
+  fprintf(fileStream, "%d\n%d\n%d\n", graph -> nodeCount, graph -> edgeCount, graph -> componentCount);
+
+  for (i = 0; i < n; i++) {
+    tempNode = &(graph -> nodeList)[i];
+    l = getDegree(tempNode);
+    fprintf(fileStream, "%s %d ", tempNode -> name, tempNode -> cComponent);
+    for (j = 0; j < l; j++) {
+      fprintf(fileStream, "%d ", readList(&(tempNode -> adjacency), j));
+    }
+    fprintf(fileStream, "\n");
+  }
+
+  return;
+}
+void loadGraph(Graph *graph, const char *fileName);
