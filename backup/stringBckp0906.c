@@ -1,4 +1,4 @@
-#include "string2.h"
+#include "string.h"
 
 void deleteAt(const char *word, char *container, unsigned int index) {
   /* elimina l'index-esima lettera della parola word e memorizza la parola residua in container */
@@ -22,15 +22,18 @@ void deleteAt(const char *word, char *container, unsigned int index) {
 Bool areRelated(const char *firstWord, const char *secondWord) {
   int n = strlen(firstWord);
   int m = strlen(secondWord);
+  int d = n - m;
   char temp[MAX_STR_LEN];
   char temp2[MAX_STR_LEN];
   int i;
+  unsigned int differentLetters = 0; /* counter per il solo caso n == m */
 
-  if (abs(n-m) > 1) {
+  if (abs(d) > 1) {
     return FALSE; /* caso piu' semplice */
   }
 
-  if (n < m) {
+  /* se le due parole differiscono in lunghezza per una lettera, tolgo l'i-esima lettera alla parola piu' lunga e la confronto con l'altra */
+  if (d == -1) { /* n < m */
     for (i = 0; i < m; i++) {
       deleteAt(secondWord, temp, i);
       if (strcmp(firstWord, temp) == 0) {
@@ -39,7 +42,7 @@ Bool areRelated(const char *firstWord, const char *secondWord) {
     }
   }
 
-  else if (n > m) {
+  else if (d == 1) { /* n > m */
     for (i = 0; i < n; i++) {
       deleteAt(firstWord, temp, i);
       if (strcmp(secondWord, temp) == 0) {
@@ -48,14 +51,17 @@ Bool areRelated(const char *firstWord, const char *secondWord) {
     }
   }
 
-  else if (n==m) {
-    for (i = 0; i < n; i++) {
-      deleteAt(firstWord, temp, i);
-      deleteAt(secondWord, temp2, i);
-      if (strcmp(temp, temp2) == 0) {
-        return TRUE;
+  /* se le due parole hanno lo stesso numero di lettere, ricalco l'implementazione di strcmp: e' piu' veloce che usare n volte strcmp stesso come sopra */
+  else { /* n == m */
+    for (; differentLetters < 2; firstWord++, secondWord++) {
+      if (*firstWord == '\0') {
+        return TRUE; /* se arrivo in fondo significa che le parole sono identiche */
+      }
+      if (*firstWord != *secondWord) { /* sto confrontando char */
+        differentLetters++;
       }
     }
+    return FALSE; /* non devo controllare differentLetters >= 2: se questo non accade allora il ciclo ha gia' ritornato TRUE arrivando alla fine di firstWord */
   }
 
   return FALSE;
