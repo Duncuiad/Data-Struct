@@ -1,18 +1,18 @@
 15
 11
-0
-rutto 0 1 12 
-pilata 0 2 6 10 
-vane 0 2 7 11 
-casa 0 1 13 
-velo 0 2 8 9 
-vaso 0 0 
-pilota 0 1 1 
-cane 0 3 2 11 13 
-pelo 0 2 4 9 
-melo 0 2 4 8 
-pirata 0 1 1 
-rane 0 2 2 7 
-brutto 0 1 0 
-case 0 2 3 7 
-pineta 0 0 
+6
+rutto 0 1 12
+pilata 1 2 6 10
+vane 2 2 7 11
+casa 2 1 13
+velo 3 2 8 9
+vaso 4 0
+pilota 1 1 1
+cane 2 3 2 11 13
+pelo 3 2 4 9
+melo 3 2 4 8
+pirata 1 1 1
+rane 2 2 2 7
+brutto 0 1 0
+case 2 2 3 7
+pineta 5 0 

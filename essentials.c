@@ -87,7 +87,7 @@ void lightPrintList(List *list) {
 /* METODI NODE */
 void constrNode(Node *node, char *chosenName) {
   strcpy(node -> name, chosenName);
-  node -> cComponent = 0;
+  node -> cComponent = -1;
   constrList(&(node -> adjacency), 0);
   return;
 }

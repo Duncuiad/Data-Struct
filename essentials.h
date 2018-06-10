@@ -5,7 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_STR_LEN 50
+#define MAX_STR_LEN 31 /* parole da max 30 caratteri + un carattere per '\0' */
 #define TRUE 1
 #define FALSE 0
 
@@ -13,6 +13,7 @@
 typedef unsigned char Bool;
 typedef struct _List List; /* struttura implementata come tabella */
 typedef struct _Node Node;
+typedef struct _Info Info;
 
 struct _List {
   int allocated;
@@ -24,6 +25,13 @@ struct _Node {
   char name[MAX_STR_LEN]; /* parola rappresentata dal nodo */
   int cComponent; /* componente connessa a cui appartiene il nodo */
   List adjacency;
+};
+
+struct _Info {
+  int *degrees;
+  int *cardinalities; /* of connected components */
+  int *eccentricities; /* of nodes */
+  int *diameters; /* of connected components */
 };
 
 /* METODI LIST */

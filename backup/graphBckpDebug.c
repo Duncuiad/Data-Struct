@@ -22,9 +22,6 @@ void destrGraph(Graph *graph) {
     destrNode(&(graph -> nodeList)[n-1-i]);
   }
   free(graph -> nodeList);
-  if (graph -> graphInfo != NULL) {
-    removeInfo(graph -> graphInfo);
-  }
   return;
 }
 
@@ -144,7 +141,7 @@ void checkForComponents(Graph *graph) { /* BFS */
   List *tempList; /* puntatore alla lista di adiacenza del nodo corrente nella coda */
   unsigned int l; /* lunghezza della lista di adiacenza */
   unsigned int j; /* contatore per la lista di adiacenza */
-  unsigned int currentAdjacent;
+  unsigned int temp;
   unsigned int componentCount = 0;
 
   /* Check */
@@ -153,53 +150,54 @@ void checkForComponents(Graph *graph) { /* BFS */
     exit(-1);
   }
 
-  /* Inizializzo la marcatura di tutti i nodi a -1 ("non marcato"), per sicurezza */
+  queue = (int*) malloc(n * sizeof(int));
 
-  for (i = 0; i < n; i++) {
-    (graph -> nodeList)[i].cComponent = -1;
-  }
+  while (head < n) { /* ogni ciclo lavora su una diversa componente connessa */
 
-  queue = (int*) malloc(n * sizeof(int) + 1);
+    head = tail + 1; /* mi metto dietro al punto raggiunto, nella coda, dall'ultima componente connessa */
+    tail++; /* head == tail */
+    while ((graph -> nodeList)[i].cComponent != -1) {
+      i++;  /* cerco il primo nodo che non e' ancora stato marcato */
+    }
 
-  /* Visita in ampiezza del grafo */
-  for (i = 0; i < n; i++) {
+    queue[head] = i; /* lo inserisco in coda */
+    (graph -> nodeList)[i].cComponent = componentCount;
 
-    if ((graph -> nodeList)[i].cComponent == -1) { /* lavoro solo su nodi non ancora marcati */
+    do { /* ciclo tra i nodi in coda */
 
-      /* all'inizio di ogni giro, head == tail + 1 */
-      tail++; /* head == tail */
+fprintf(stderr, "\nI got here: [head = %d, tail = %d, i = %d]\n", head, tail, i);
 
-      queue[head] = i; /* inserisco il nuovo nodo in coda */
-      (graph -> nodeList)[i].cComponent = componentCount; /* e lo marco come visitato */
+      tempNode = &((graph -> nodeList)[queue[head]]);
+      tempList = &(tempNode -> adjacency);
+      l = tempList -> active;
 
-      do { /* ciclo tra i nodi in coda per aggiungerne (e per marcarne) gli adiacenti */
+printNode(tempNode);
 
-        tempNode = &((graph -> nodeList)[queue[head]]);
-        tempList = &(tempNode -> adjacency);
-        l = tempList -> active;
+      for (j = 0; j < l; j++) {
 
-        for (j = 0; j < l; j++) {
+        temp = readList(tempList, j);
 
-          currentAdjacent = readList(tempList, j);
+        if ((graph -> nodeList)[temp].cComponent == -1) {
+          tail++;
+          queue[tail] = temp; /* aggiungo in coda la lista di adiacenza del nodo corrente */
+          (graph -> nodeList)[temp].cComponent = componentCount;
 
-          if ((graph -> nodeList)[currentAdjacent].cComponent == -1) { /* controllo che il nodo non sia già marcato */
-            tail++;
-            queue[tail] = currentAdjacent; /* aggiungo in coda, pezzo per pezzo, la lista di adiacenza del nodo corrente */
-            (graph -> nodeList)[currentAdjacent].cComponent = componentCount; /* marco il nodo appena aggiunto */
-          }
+fprintf(stderr, "Ho appena aggiunto: %s\n", (graph -> nodeList)[temp].name);
 
         }
 
-        head++; /* vado oltre il nodo appena registrato */
+fprintf(stderr, "[j = %d, l = %d]\n", j, l);
 
-      } while (head <= tail); /* prendo in esame ogni nodo in coda finche' raggiungo la fine della componente connessa */
+      }
 
-      componentCount++;
-    }
+      head++; /* vado oltre il nodo appena registrato */
+
+    } while (head <= tail); /* prendo in esame ogni nodo in coda finche' raggiungo la fine della componente connessa */
+
+    componentCount++;
+    i++;
   }
 
-  /* Libero la coda e aggiorno lo stato del grafo */
-  free(queue);
   graph -> componentCount = componentCount;
   graph -> componentsReady = TRUE;
   return;

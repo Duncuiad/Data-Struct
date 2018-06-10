@@ -1,7 +1,7 @@
 #include "string.h"
 
 Bool areRelated(const char *firstWord, const char *secondWord) {
-  
+
   int n = strlen(firstWord);
   int m = strlen(secondWord);
   int d = n - m;
@@ -64,13 +64,17 @@ Bool areRelated(const char *firstWord, const char *secondWord) {
     /* se le due parole hanno lo stesso numero di lettere, ricalco l'implementazione di strcmp: e' piu' veloce che usare n volte strcmp stesso come sopra */
     default: /* n == m */
       for (; differentLetters < 2; firstWord++, secondWord++) {
+
+
         if (*firstWord == '\0') {
           return TRUE; /* se arrivo in fondo significa che le parole sono identiche */
+          fprintf(stderr, "\nAttenzione [string.c - areRelated]: il file contiene parole doppie\n");
         }
         if (*firstWord != *secondWord) { /* sto confrontando char */
           differentLetters++;
         }
       }
+
       return FALSE; /* non devo controllare differentLetters >= 2: se questo non accade allora il ciclo ha gia' ritornato TRUE arrivando alla fine di firstWord */
 
   }

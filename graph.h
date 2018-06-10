@@ -17,12 +17,13 @@ struct _Graph {
   Node *nodeList;
   int componentCount;
 
-  /* FAC: INFO */
+  Info *graphInfo;
 
   /* FLAGS (mostly debug) */
   Bool isEmpty;
   Bool nodesReady;
   Bool edgesReady;
+  Bool componentsReady;
 
 };
 
@@ -33,6 +34,7 @@ void addNode(Graph *graph, char *word);
 void addEdge(Graph *graph, unsigned int firstNode, unsigned int secondNode);
 void importNodes(Graph *graph, const char *fileName);
 void checkForEdges(Graph *graph);
+void checkForComponents(Graph *graph);
 void importGraph(Graph *graph, const char * fileName);
 void printGraph(Graph *graph, const char option);
 void saveGraph(Graph *graph, const char *fileName);

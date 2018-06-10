@@ -10,9 +10,11 @@ int main() {
 
   constrGraph(&grafo);
 
-  importGraph(&grafo, "./files/English.txt");
+  loadGraph(&grafo, "./files/Esempio.dat");
 
-  saveGraph(&grafo, "./files/English.dat");
+  checkForComponents(&grafo);
+
+  saveGraph(&grafo, "./files/Esempio.dat");
 
   printGraph(&grafo, 's');
 
