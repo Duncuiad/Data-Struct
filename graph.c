@@ -8,6 +8,9 @@ void constrGraph(Graph *graph) {
   graph -> edgeCount = 0;
   graph -> nodeList = NULL;
   graph -> componentCount = 0;
+
+  graph -> graphInfo = NULL; /* la variabile graphInfo e' gestita nella libreria info.c */
+
   graph -> isEmpty = TRUE;
   graph -> nodesReady = FALSE;
   graph -> edgesReady = FALSE;

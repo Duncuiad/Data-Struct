@@ -78,9 +78,6 @@ void lightPrintList(List *list) {
     if (i != n-1) {
       printf(", ");
     }
-    else {
-      printf("\n");
-    }
   }
 }
 
