@@ -32,6 +32,9 @@ struct _Info {
   int *cardinalities; /* of connected components */
   int *eccentricities; /* of nodes */
   int *diameters; /* of connected components */
+
+  /* Flag */
+  Bool cardsReady;
 };
 
 /* METODI LIST */
