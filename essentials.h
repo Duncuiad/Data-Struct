@@ -35,6 +35,7 @@ struct _Info {
 
   /* Flag */
   Bool cardsReady;
+  Bool eccReady;
 };
 
 /* METODI LIST */

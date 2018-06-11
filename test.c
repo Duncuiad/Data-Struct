@@ -10,6 +10,7 @@ int main() {
   int i;
   int cc;
   int n;
+  int eccentricity;
 
   constrGraph(&grafo);
 
@@ -21,18 +22,14 @@ int main() {
 
   cc = grafo.componentCount;
 
-  printGraph(&grafo, 's');
+  printGraph(&grafo, 'n');
 
   addInfo(&grafo);
   getDegreeInfo(&grafo);
-  getCardInfo(&grafo);
-
-  for (i = 0; i < n; i++) {
-    printf("[%d]: grado %d\n", i, (grafo.graphInfo -> degrees)[i]);
-  }
+  getDiameterInfo(&grafo);
 
   for (i = 0; i < cc; i++) {
-    printf("Componente n° %d: %d elementi\n", i, (grafo.graphInfo -> cardinalities)[i]);
+    printf("Componente n° %d: %d elementi con diametro %d\n", i, (grafo.graphInfo -> cardinalities)[i], (grafo.graphInfo -> diameters)[i]);
   }
 
   destrGraph(&grafo);

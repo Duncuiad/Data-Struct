@@ -11,11 +11,12 @@ void addInfo(Graph *graph){
   graph -> graphInfo = (Info*) malloc(sizeof(Info)); /* viene rimosso da removeInfo() */
 
   graph -> graphInfo -> degrees = (int*) malloc((graph -> nodeCount) * sizeof(int));
-  graph -> graphInfo -> cardinalities = (int*) calloc(graph -> componentCount, sizeof(int)); /* azzero tutti i valori */
+  graph -> graphInfo -> cardinalities = (int*) calloc(graph -> componentCount, sizeof(int)); /* azzero tutti i valori perche' aggiorno la cardinalita' con ++ */
   graph -> graphInfo -> eccentricities = (int*) malloc((graph -> nodeCount) * sizeof(int));
-  graph -> graphInfo -> diameters = (int*) malloc((graph -> componentCount) * sizeof(int));
+  graph -> graphInfo -> diameters = (int*) calloc(graph -> componentCount, sizeof(int)); /* azzero perche' gli elementi di diameters sono massimi di altri vettori, che aggiorno a ogni iterazione se maggiori del valore precedentemente memorizzato */
 
   graph -> graphInfo -> cardsReady = FALSE;
+  graph -> graphInfo -> eccReady = FALSE;
 
   return;
 }
@@ -85,11 +86,57 @@ void getCardInfo(Graph *graph) {
 }
 
 void getEccentrInfo(Graph *graph) {
+  int i;
+  int n = graph -> nodeCount;
+  int *eccentr;
+
+  /* Check */
+  if (graph -> graphInfo == NULL) {
+    fprintf(stderr, "\nErrore [info.c - getEccentrInfo]: non ho ancora aggiunto l'appendice graphInfo al grafo. Chiamare la funzione addInfo\n");
+    exit(-1);
+  }
+  eccentr = graph -> graphInfo -> eccentricities;
+
+  /* Body */
+  for (i = 0; i < n; i++, eccentr++) {
+    *eccentr = getEccentricity(graph, i);
+  }
+
+  /* Update state */
+  graph -> graphInfo -> eccReady = TRUE;
 
   return;
 }
 
 void getDiameterInfo(Graph *graph) {
+  int i;
+  int n = graph -> nodeCount;
+  int *eccentr;
+  int *diams;
+  int c; /* componente connessa */
+  int cc; /* numero di componente connessa */
+
+  /* Check */
+  if (graph -> graphInfo == NULL) {
+    fprintf(stderr, "\nErrore [info.c - getDiameterInfo]: non ho ancora aggiunto l'appendice graphInfo al grafo. Chiamare la funzione addInfo\n");
+    exit(-1);
+  }
+
+  if (graph -> graphInfo -> eccReady == FALSE) {
+    getEccentrInfo(graph); /* per determinare i diametri ho bisogno di conoscere l'eccentricita' di ogni nodo */
+  }
+
+  eccentr = graph -> graphInfo -> eccentricities;
+  diams = graph -> graphInfo -> diameters;
+
+  /* Body */
+  for (i = 0; i < n; i++) {
+    c = (graph -> nodeList)[i].cComponent;
+    if (diams[c] < eccentr[i]) {
+      diams[c] = eccentr[i];
+    }
+
+  }
 
   return;
 }
@@ -100,47 +147,75 @@ void getInfo(Graph *graph) {
 }
 
 int getEccentricity(Graph *graph, unsigned int index) {
-  int i;
-  int n; /* cardinalita' della componente connessa a cui appartiene il nodo di indice index */
-  int component = graph -> nodeList)[i].cComponent;
+
+  int component = (graph -> nodeList)[index].cComponent; /* usero' l'elemento cComponent di ogni nodo anche come marker, per poi resettarlo al valore iniziale alla fine della procedura */
+  int cardinality;
+
+  /* Per scorrere la coda (l'algoritmo e' una BFS) */
+  /* Osservazione: la coda induce un ordine totale sugli elementi della stessa componente connessa */
+  /* Sfruttero' questo fatto anche usando il vettore queue come dizionario tra gli elementi (ordinati dalla visita) della componente e il loro indice nel grafo totale */
   int *queue;
   int head = 0;
-  int tail = -1;
+  int tail = 0;
+
+  /* Per scorrere la lista di adiacenza del nodo corrente in coda */
+  Node *tempNode;
+  List *tempList;
+  int j;
+  int l;
+  int currentAdjacent;
+
+  /* Risultato */
+  int depth;
 
   /* Check */
   if (graph -> graphInfo -> cardsReady == FALSE) {
     getCardInfo(graph); /* avere le cardinalita' delle c. connesse mi permette di allocare la coda della BFS con il numero esatto di elementi */
   }
 
-  queue = (int*) malloc((graph -> graphInfo -> cardinalities)[component] * sizeof(int));
+  cardinality = (graph -> graphInfo -> cardinalities)[component];
+  queue = (int*) malloc(cardinality * sizeof(int));
 
-  /* all'inizio di ogni giro, head == tail + 1 */
-  tail++; /* head == tail */
-/* DA QUI IN POI E' DA AGGIORNARE */
-  queue[head] = 0; /* inserisco il nuovo nodo in coda */
-  (graph -> nodeList)[i].cComponent = componentCount; /* e lo marco come visitato */
+  queue[0] = index; /* inserisco il nodo sorgente in coda */
+  (graph -> nodeList)[index].cComponent = -1; /* marco la sorgente */
 
-  do { /* ciclo tra i nodi in coda per aggiungerne (e per marcarne) gli adiacenti */
+  /* visita in ampiezza con l'elemento cComponent di ogni nodo come marcatore */
+  /* questa scelta di marcatore mi permette di non dover allocare anche per c. c. molto piccole un vettore di marcatori della stessa cardinalita' dell'intero grafo */
+  for (head = 0; head < cardinality; head++) { /* ciclo tra i nodi in coda per aggiungerne (e per marcarne) gli adiacenti */
 
     tempNode = &((graph -> nodeList)[queue[head]]);
     tempList = &(tempNode -> adjacency);
-    l = tempList -> active;
+    l = tempList -> active; /* lunghezza della lista di adiacenza del nodo corrente */
 
     for (j = 0; j < l; j++) {
 
       currentAdjacent = readList(tempList, j);
 
-      if ((graph -> nodeList)[currentAdjacent].cComponent == -1) { /* controllo che il nodo non sia già marcato */
+      if ((graph -> nodeList)[currentAdjacent].cComponent >= 0) { /* convenzione: tutte le componenti connesse hanno indice >= 0, quindi utilizzo indici negativi per marcare i livelli di profondita' */
         tail++;
         queue[tail] = currentAdjacent; /* aggiungo in coda, pezzo per pezzo, la lista di adiacenza del nodo corrente */
-        (graph -> nodeList)[currentAdjacent].cComponent = componentCount; /* marco il nodo appena aggiunto */
+        (graph -> nodeList)[currentAdjacent].cComponent = (tempNode -> cComponent) - 1;
+        /* marco il nodo appena aggiunto con un livello in piu' rispetto al nodo da cui e' stato raggiunto */
       }
 
     }
 
-    head++; /* vado oltre il nodo appena registrato */
+  }
 
-  } while (head <= tail); /* prendo in esame ogni nodo in coda finche' raggiungo la fine della componente connessa */
+/* Debug: puo' essere comodo per vedere in azione la scelta della marcatura (su componenti connesse piccole!) */
+/*
+for (j = 0; j < cardinality; j++) {
+  fprintf(stderr, "[posizione in coda: %d] nodo: %d, marker: %d\n", j, queue[j], (graph -> nodeList)[queue[j]].cComponent);
+}
+*/
 
-  return 0;
+  depth = -1 - (graph -> nodeList)[queue[cardinality - 1]].cComponent; /* con la convenzione sulla notazione dei marcatori, il livello massimo di profondita' rispetto al primo nodo e' -1 - d, dove d e' il marcatore dell'ultimo nodo in coda */
+
+  for (j = 0; j < cardinality; j++) {
+    (graph -> nodeList)[queue[j]].cComponent = component; /* resetto la componente connessa di ogni nodo a come era in entrata */
+  }
+
+  free(queue);
+
+  return depth;
 }
