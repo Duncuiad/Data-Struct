@@ -1,6 +1,10 @@
 #include "info.h"
 
-void addInfo(Graph *graph){
+void addInfo(Graph *graph){ /* costruttore di Info relativo al grafo Graph (non esistono Info isolati) */
+  Info *thisInfo;
+  int i;
+  int n = graph -> nodeCount;
+  int c = graph -> componentCount;
 
   /* Check */
   if (graph -> componentsReady == FALSE) {
@@ -8,15 +12,34 @@ void addInfo(Graph *graph){
     exit(-1);
   }
 
-  graph -> graphInfo = (Info*) malloc(sizeof(Info)); /* viene rimosso da removeInfo() */
+  thisInfo = (Info*) malloc(sizeof(Info)); /* viene rimosso da removeInfo() */
 
-  graph -> graphInfo -> degrees = (int*) malloc((graph -> nodeCount) * sizeof(int));
-  graph -> graphInfo -> cardinalities = (int*) calloc(graph -> componentCount, sizeof(int)); /* azzero tutti i valori perche' aggiorno la cardinalita' con ++ */
-  graph -> graphInfo -> eccentricities = (int*) malloc((graph -> nodeCount) * sizeof(int));
-  graph -> graphInfo -> diameters = (int*) calloc(graph -> componentCount, sizeof(int)); /* azzero perche' gli elementi di diameters sono massimi di altri vettori, che aggiorno a ogni iterazione se maggiori del valore precedentemente memorizzato */
+  thisInfo -> degrees = (int*) malloc(n * sizeof(int));
+  thisInfo -> cardinalities = (int*) calloc(c, sizeof(int)); /* azzero tutti i valori perche' aggiorno la cardinalita' con ++ */
+  thisInfo -> eccentricities = (int*) malloc(n * sizeof(int));
+  thisInfo -> diameters = (int*) calloc(c, sizeof(int)); /* azzero perche' gli elementi di diameters sono massimi di altri vettori, che aggiorno a ogni iterazione se maggiori del valore precedentemente memorizzato */
 
-  graph -> graphInfo -> cardsReady = FALSE;
-  graph -> graphInfo -> eccReady = FALSE;
+  thisInfo -> firstWord = (int*) malloc(c * sizeof(int));
+  thisInfo -> lastWord = (int*) malloc(c * sizeof(int));
+
+  thisInfo -> sortedNodes = (int*) malloc(n * sizeof(int));
+  thisInfo -> sortedComponents = (int*) malloc(c * sizeof(int));
+
+  /* inizializzo i vettori sortedX con una successione x.i = i (ordine di partenza) */
+  for (i = 0; i < n; i++) {
+    thisInfo -> sortedNodes[i] = i;
+  }
+  for (i = 0; i < c; i++) {
+    thisInfo -> sortedComponents[i] = i;
+    thisInfo -> firstWord[i] = -1; /* convenzione per indicare che non ha ancora un valore */
+    thisInfo -> lastWord[i] = -1;
+  }
+
+  /* Update state */
+  thisInfo -> cardsReady = FALSE;
+  thisInfo -> eccReady = FALSE;
+
+  graph -> graphInfo = thisInfo; /* lego thisInfo, che fino ad ora e' stata una variabile temporanea, al grafo */
 
   return;
 }
@@ -27,6 +50,12 @@ void removeInfo(Info *info) { /* destrGraph chiama automaticamente removeInfo */
   free(info -> cardinalities);
   free(info -> eccentricities);
   free(info -> diameters);
+
+  free(info -> firstWord);
+  free(info -> lastWord);
+
+  free(info -> sortedNodes);
+  free(info -> sortedComponents);
 
   free(info);
   info = NULL;
@@ -141,8 +170,51 @@ void getDiameterInfo(Graph *graph) {
   return;
 }
 
-void getInfo(Graph *graph) {
+void getFirstLastWordInfo(Graph *graph) {
+int i;
+int c; /* component index */
+int n = graph -> nodeCount;
+int *firsts = graph -> graphInfo -> firstWord;
+int *lasts = graph -> graphInfo -> lastWord;
+char *tempString;
 
+  /* Check */
+  if (graph -> graphInfo == NULL) {
+    fprintf(stderr, "\nErrore [info.c - getFirstWordInfo]: non ho ancora aggiunto l'appendice graphInfo al grafo. Chiamare la funzione addInfo\n");
+    exit(-1);
+  }
+
+  /* Body */
+  for (i = 0; i < n; i++) { /* classica ricerca del massimo (minimo) in un vettore per confronto diretto */
+    c = (graph -> nodeList)[i].cComponent;
+    tempString = getWord(graph, i);
+
+    /* prima parola */
+    if (firsts[c] == -1) {
+      firsts[c] = i; /* quando la c-esima componente connessa non e' ancora stata visitata */
+    }
+    else if (strcmp(getWord(graph, firsts[c]), tempString) > 0) {
+      firsts[c] = i;
+    }
+
+    /* ultima parola */
+    if (lasts[c] == -1) {
+      lasts[c] = i; /* quando la c-esima componente connessa non e' ancora stata visitata */
+    }
+    else if (strcmp(getWord(graph, lasts[c]), tempString) < 0) {
+      lasts[c] = i;
+    }
+  }
+
+  return;
+}
+
+void getInfo(Graph *graph) {
+  getDegreeInfo(graph);
+  getCardInfo(graph);
+  getEccentrInfo(graph);
+  getDiameterInfo(graph);
+  getFirstLastWordInfo(graph);
   return;
 }
 

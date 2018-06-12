@@ -6,6 +6,9 @@
 #include "graph.h"
 #include "info.h"
 
-void quickSort(int *array, unsigned int lower, unsigned int upper);
+int comesBefore(Graph *graph, unsigned int c1, unsigned int c2);
+void quickSort(int *array, int lower, int upper);
+void quickSortComponents(Graph *graph, int lower, int upper);
+void quickSortWords(Graph *graph, int lower, int upper);
 
 #endif

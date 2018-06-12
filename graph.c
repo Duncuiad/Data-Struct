@@ -311,3 +311,7 @@ void loadGraph(Graph *graph, const char *fileName) {
   graph -> edgesReady = TRUE;
   return;
 }
+
+char *getWord(Graph *graph, unsigned int index) {
+  return (graph -> nodeList)[index].name;
+}

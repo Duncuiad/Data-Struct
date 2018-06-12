@@ -33,6 +33,14 @@ struct _Info {
   int *eccentricities; /* of nodes */
   int *diameters; /* of connected components */
 
+  /* Prima e ultima parola di ogni componente connessa, memorizzate con l'indice del nodo corrispondente */
+  int *firstWord;
+  int *lastWord;
+
+  /* Dizionari (hash) */
+  int *sortedNodes;
+  int *sortedComponents;
+
   /* Flag */
   Bool cardsReady;
   Bool eccReady;

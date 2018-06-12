@@ -40,4 +40,6 @@ void printGraph(Graph *graph, const char option);
 void saveGraph(Graph *graph, const char *fileName);
 void loadGraph(Graph *graph, const char *fileName);
 
+char *getWord(Graph *graph, unsigned int index);
+
 #endif

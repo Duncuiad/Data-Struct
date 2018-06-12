@@ -12,6 +12,7 @@ void getDegreeInfo(Graph *graph);
 void getCardInfo(Graph *graph);
 void getEccentrInfo(Graph *graph);
 void getDiameterInfo(Graph *graph);
+void getFirstLastWordInfo(Graph *graph);
 void getInfo(Graph *graph); /* gets all Info */
 
 int getEccentricity(Graph *graph, unsigned int index); /* returns the eccentricity of a given node in the graph */
