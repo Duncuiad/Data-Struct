@@ -29,6 +29,8 @@ struct _Node {
 
 struct _Info {
   int *degrees;
+  int maxDegree;
+  int *degreesCount;
   int *cardinalities; /* of connected components */
   int *eccentricities; /* of nodes */
   int *diameters; /* of connected components */
@@ -42,6 +44,7 @@ struct _Info {
   int *sortedComponents;
 
   /* Flag */
+  Bool degsReady;
   Bool cardsReady;
   Bool eccReady;
 };

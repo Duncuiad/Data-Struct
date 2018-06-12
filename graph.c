@@ -90,6 +90,7 @@ void importNodes(Graph *graph, const char *fileName) {
   /* controllo che il file esista */
   if (fileStream == NULL) {
     fprintf(stderr, "Errore [graph.c - importNodes]: non esiste un file con questo nome (%s)", fileName);
+    destrGraph(graph); /* per non perdere traccia del grafo uscendo dal programma */
     exit(-1);
   }
 

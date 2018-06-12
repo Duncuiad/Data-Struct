@@ -15,6 +15,8 @@ void addInfo(Graph *graph){ /* costruttore di Info relativo al grafo Graph (non 
   thisInfo = (Info*) malloc(sizeof(Info)); /* viene rimosso da removeInfo() */
 
   thisInfo -> degrees = (int*) malloc(n * sizeof(int));
+  thisInfo -> maxDegree = 0;
+  thisInfo -> degreesCount = NULL; /* alloco memoria quando chiamo getDegreesCount e la tolgo, se il puntatore non e' NULL, in removeInfo */
   thisInfo -> cardinalities = (int*) calloc(c, sizeof(int)); /* azzero tutti i valori perche' aggiorno la cardinalita' con ++ */
   thisInfo -> eccentricities = (int*) malloc(n * sizeof(int));
   thisInfo -> diameters = (int*) calloc(c, sizeof(int)); /* azzero perche' gli elementi di diameters sono massimi di altri vettori, che aggiorno a ogni iterazione se maggiori del valore precedentemente memorizzato */
@@ -36,6 +38,7 @@ void addInfo(Graph *graph){ /* costruttore di Info relativo al grafo Graph (non 
   }
 
   /* Update state */
+  thisInfo -> degsReady = FALSE;
   thisInfo -> cardsReady = FALSE;
   thisInfo -> eccReady = FALSE;
 
@@ -47,6 +50,9 @@ void addInfo(Graph *graph){ /* costruttore di Info relativo al grafo Graph (non 
 void removeInfo(Info *info) { /* destrGraph chiama automaticamente removeInfo */
 
   free(info -> degrees);
+  if (info -> degreesCount != NULL) {
+    free(info -> degreesCount);
+  }
   free(info -> cardinalities);
   free(info -> eccentricities);
   free(info -> diameters);
@@ -64,7 +70,7 @@ void removeInfo(Info *info) { /* destrGraph chiama automaticamente removeInfo */
 }
 
 void getDegreeInfo(Graph *graph) {
-
+  int maxDeg = 0;
   int i;
   int n = graph -> nodeCount;
   int *degs;
@@ -81,6 +87,40 @@ void getDegreeInfo(Graph *graph) {
   /* Body */
   for (i = 0; i < n; i++, ithNode++) {
     degs[i] = getDegree(ithNode); /* a ogni iterazione ithNode punta all'i-esimo nodo di graph */
+    if (maxDeg < degs[i]) {
+      maxDeg = degs[i]; /* tengo traccia del grado massimo tra quelli dei nodi */
+    }
+  }
+
+  /* Update state */
+  graph -> graphInfo -> maxDegree = maxDeg;
+  graph -> graphInfo -> degsReady = TRUE;
+  return;
+}
+
+void getDegreesCount(Graph *graph) {
+  int i;
+  int n = graph -> nodeCount;
+  int *degs;
+  int *degCount;
+
+  /* Check */
+  if (graph -> graphInfo == NULL) {
+    fprintf(stderr, "\nErrore [info.c - getDegreesCount]: non ho ancora aggiunto l'appendice graphInfo al grafo. Chiamare la funzione addInfo\n");
+    exit(-1);
+  }
+
+  if (graph -> graphInfo -> degsReady == FALSE) {
+    getDegreeInfo(graph); /* uso il vettore dei gradi per rapidita' */
+  }
+  degs = graph -> graphInfo -> degrees;
+
+  /* Body */
+  graph -> graphInfo -> degreesCount = (int*) calloc((graph -> graphInfo -> maxDegree) + 1, sizeof(int)); /* distrutto in removeInfo */
+  degCount = graph -> graphInfo -> degreesCount;
+
+  for (i = 0; i < n; i++) {
+    degCount[ degs[i] ]++; /* aumento di 1 il conteggio del grado deg[i], dove i e' l'indice del nodo */
   }
 
   return;
@@ -211,6 +251,7 @@ char *tempString;
 
 void getInfo(Graph *graph) {
   getDegreeInfo(graph);
+  getDegreesCount(graph);
   getCardInfo(graph);
   getEccentrInfo(graph);
   getDiameterInfo(graph);

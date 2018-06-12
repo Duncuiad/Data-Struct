@@ -13,8 +13,8 @@
 96 parole di grado 1
 246 parole di grado 0
 293 componenti
-Componente 1: 109 parole da ahi a èi (diametro 12)
-Componente 2: 16 parole da fonte a vòlto (diametro 7)
+Componente 1: 109 parole da ahi a ï¿½i (diametro 12)
+Componente 2: 16 parole da fonte a vï¿½lto (diametro 7)
 Componente 3: 6 parole da alta a altrui (diametro 4)
 Componente 4: 5 parole da face a tace (diametro 2)
 Componente 5: 4 parole da ben a venne (diametro 3)
@@ -27,7 +27,7 @@ Componente 11: 3 parole da belle a pelle (diametro 2)
 Componente 12: 3 parole da calle a valle (diametro 2)
 Componente 13: 3 parole da dov a ove (diametro 2)
 Componente 14: 3 parole da elegge a regge (diametro 2)
-Componente 15: 3 parole da farà a sarò (diametro 2)
+Componente 15: 3 parole da farï¿½ a sarï¿½ (diametro 2)
 Componente 16: 3 parole da lena a meni (diametro 2)
 Componente 17: 3 parole da peggio a seggio (diametro 2)
 Componente 18: 3 parole da vedi a vidi (diametro 2)
@@ -48,12 +48,12 @@ Componente 32: 2 parole da doglia a voglia (diametro 1)
 Componente 33: 2 parole da fosse a mosse (diametro 1)
 Componente 34: 2 parole da giunto a giusto (diametro 1)
 Componente 35: 2 parole da lago a largo (diametro 1)
-Componente 36: 2 parole da lascia a lasciò (diametro 1)
+Componente 36: 2 parole da lascia a lasciï¿½ (diametro 1)
 Componente 37: 2 parole da parti a partia (diametro 1)
 Componente 38: 2 parole da passai a passar (diametro 1)
-Componente 39: 2 parole da perch a perché (diametro 1)
+Componente 39: 2 parole da perch a perchï¿½ (diametro 1)
 Componente 40: 2 parole da perdei a perder (diametro 1)
-Componente 41: 2 parole da piè a più (diametro 1)
+Componente 41: 2 parole da piï¿½ a piï¿½ (diametro 1)
 Componente 42: 2 parole da quando a quanto (diametro 1)
 Componente 43: 2 parole da rispuos a rispuose (diametro 1)
 Componente 44: 2 parole da selvaggia a selvaggio (diametro 1)
@@ -81,13 +81,13 @@ Componente 65: 1 parole da attrista a attrista (diametro 0)
 Componente 66: 1 parole da augusto a augusto (diametro 0)
 Componente 67: 1 parole da autore a autore (diametro 0)
 Componente 68: 1 parole da avea a avea (diametro 0)
-Componente 69: 1 parole da avrà a avrà (diametro 0)
+Componente 69: 1 parole da avrï¿½ a avrï¿½ (diametro 0)
 Componente 70: 1 parole da beate a beate (diametro 0)
 Componente 71: 1 parole da bestia a bestia (diametro 0)
 Componente 72: 1 parole da bramosa a bramosa (diametro 0)
 Componente 73: 1 parole da bugiardi a bugiardi (diametro 0)
 Componente 74: 1 parole da buono a buono (diametro 0)
-Componente 75: 1 parole da caccerà a caccerà (diametro 0)
+Componente 75: 1 parole da caccerï¿½ a caccerï¿½ (diametro 0)
 Componente 76: 1 parole da cammilla a cammilla (diametro 0)
 Componente 77: 1 parole da campar a campar (diametro 0)
 Componente 78: 1 parole da cantai a cantai (diametro 0)
@@ -95,9 +95,9 @@ Componente 79: 1 parole da carca a carca (diametro 0)
 Componente 80: 1 parole da cercar a cercar (diametro 0)
 Componente 81: 1 parole da certo a certo (diametro 0)
 Componente 82: 1 parole da ciascun a ciascun (diametro 0)
-Componente 83: 1 parole da ciberà a ciberà (diametro 0)
-Componente 84: 1 parole da città a città (diametro 0)
-Componente 85: 1 parole da ciò a ciò (diametro 0)
+Componente 83: 1 parole da ciberï¿½ a ciberï¿½ (diametro 0)
+Componente 84: 1 parole da cittï¿½ a cittï¿½ (diametro 0)
+Componente 85: 1 parole da ciï¿½ a ciï¿½ (diametro 0)
 Componente 86: 1 parole da color a color (diametro 0)
 Componente 87: 1 parole da colui a colui (diametro 0)
 Componente 88: 1 parole da combusto a combusto (diametro 0)
@@ -148,12 +148,12 @@ Componente 132: 1 parole da gaetta a gaetta (diametro 0)
 Componente 133: 1 parole da genti a genti (diametro 0)
 Componente 134: 1 parole da gioia? a gioia? (diametro 0)
 Componente 135: 1 parole da giugne a giugne (diametro 0)
-Componente 136: 1 parole da già a già (diametro 0)
+Componente 136: 1 parole da giï¿½ a giï¿½ (diametro 0)
 Componente 137: 1 parole da grande a grande (diametro 0)
 Componente 138: 1 parole da gravezza a gravezza (diametro 0)
 Componente 139: 1 parole da guardai a guardai (diametro 0)
 Componente 140: 1 parole da guata a guata (diametro 0)
-Componente 141: 1 parole da ilïón a ilïón (diametro 0)
+Componente 141: 1 parole da ilï¿½ï¿½n a ilï¿½ï¿½n (diametro 0)
 Componente 142: 1 parole da impera a impera (diametro 0)
 Componente 143: 1 parole da imperador a imperador (diametro 0)
 Componente 144: 1 parole da infin a infin (diametro 0)
@@ -161,7 +161,7 @@ Componente 145: 1 parole da intrai a intrai (diametro 0)
 Componente 146: 1 parole da italia a italia (diametro 0)
 Componente 147: 1 parole da iulio a iulio (diametro 0)
 Componente 148: 1 parole da lagrimar a lagrimar (diametro 0)
-Componente 149: 1 parole da lascerò a lascerò (diametro 0)
+Componente 149: 1 parole da lascerï¿½ a lascerï¿½ (diametro 0)
 Componente 150: 1 parole da leggiera a leggiera (diametro 0)
 Componente 151: 1 parole da leone a leone (diametro 0)
 Componente 152: 1 parole da lombardi a lombardi (diametro 0)
@@ -183,7 +183,7 @@ Componente 167: 1 parole da miei a miei (diametro 0)
 Componente 168: 1 parole da miserere a miserere (diametro 0)
 Componente 169: 1 parole da montava a montava (diametro 0)
 Componente 170: 1 parole da morir a morir (diametro 0)
-Componente 171: 1 parole da morì a morì (diametro 0)
+Componente 171: 1 parole da morï¿½ a morï¿½ (diametro 0)
 Componente 172: 1 parole da mpedisce a mpedisce (diametro 0)
 Componente 173: 1 parole da mpediva a mpediva (diametro 0)
 Componente 174: 1 parole da nacqui a nacqui (diametro 0)
@@ -207,7 +207,7 @@ Componente 191: 1 parole da parea a parea (diametro 0)
 Componente 192: 1 parole da parenti a parenti (diametro 0)
 Componente 193: 1 parole da parlar a parlar (diametro 0)
 Componente 194: 1 parole da partire a partire (diametro 0)
-Componente 195: 1 parole da patrïa a patrïa (diametro 0)
+Componente 195: 1 parole da patrï¿½a a patrï¿½a (diametro 0)
 Componente 196: 1 parole da paura a paura (diametro 0)
 Componente 197: 1 parole da pelago a pelago (diametro 0)
 Componente 198: 1 parole da pensier a pensier (diametro 0)
@@ -246,7 +246,7 @@ Componente 230: 1 parole da sali a sali (diametro 0)
 Componente 231: 1 parole da salire a salire (diametro 0)
 Componente 232: 1 parole da salute a salute (diametro 0)
 Componente 233: 1 parole da sanza a sanza (diametro 0)
-Componente 234: 1 parole da sapïenza a sapïenza (diametro 0)
+Componente 234: 1 parole da sapï¿½enza a sapï¿½enza (diametro 0)
 Componente 235: 1 parole da saranno a saranno (diametro 0)
 Componente 236: 1 parole da scorte a scorte (diametro 0)
 Componente 237: 1 parole da seconda a seconda (diametro 0)
@@ -295,7 +295,7 @@ Componente 279: 1 parole da venisse a venisse (diametro 0)
 Componente 280: 1 parole da verace a verace (diametro 0)
 Componente 281: 1 parole da vergine a vergine (diametro 0)
 Componente 282: 1 parole da vergognosa a vergognosa (diametro 0)
-Componente 283: 1 parole da verrà a verrà (diametro 0)
+Componente 283: 1 parole da verrï¿½ a verrï¿½ (diametro 0)
 Componente 284: 1 parole da vestite a vestite (diametro 0)
 Componente 285: 1 parole da villa a villa (diametro 0)
 Componente 286: 1 parole da virgilio a virgilio (diametro 0)
@@ -305,7 +305,7 @@ Componente 289: 1 parole da viver a viver (diametro 0)
 Componente 290: 1 parole da volontieri a volontieri (diametro 0)
 Componente 291: 1 parole da volume a volume (diametro 0)
 Componente 292: 1 parole da vorrai a vorrai (diametro 0)
-Componente 293: 1 parole da vïaggio a vïaggio (diametro 0)
+Componente 293: 1 parole da vï¿½aggio a vï¿½aggio (diametro 0)
 abbandonai
 acqua
 acquista
@@ -341,7 +341,7 @@ attrista
 augusto
 autore
 avea
-avrà
+avrï¿½
 basso
 beate
 belle
@@ -353,7 +353,7 @@ brame
 bramosa
 bugiardi
 buono
-caccerà
+caccerï¿½
 cagion
 cagione
 calle
@@ -368,11 +368,11 @@ certo
 ch
 che
 chi
-ché
+chï¿½
 ciascun
-ciberà
-città
-ciò
+ciberï¿½
+cittï¿½
+ciï¿½
 colle
 color
 colui
@@ -391,7 +391,7 @@ corpo
 cosa
 cose
 costui
-così
+cosï¿½
 cotanto
 coverta
 cu
@@ -411,7 +411,7 @@ dio
 dipartilla
 dir
 diritta
-dirò
+dirï¿½
 discerno
 diserta
 diserto
@@ -426,7 +426,7 @@ dove
 dritto
 dura
 durata
-dèi
+dï¿½i
 ecco
 ed
 elegge
@@ -445,7 +445,7 @@ fai
 falsi
 fame
 famoso
-farà
+farï¿½
 fatto
 fece
 felice
@@ -469,14 +469,14 @@ fuggiva
 fui
 fuor
 furon
-fé
+fï¿½
 gaetta
 genti
 gioia?
 giugne
 giunto
 giusto
-già
+giï¿½
 grame
 gran
 grande
@@ -490,7 +490,7 @@ guida
 ha
 ho
 il
-ilïón
+ilï¿½ï¿½n
 impera
 imperador
 in
@@ -504,9 +504,9 @@ la
 lago
 lagrimar
 largo
-lascerò
+lascerï¿½
 lascia
-lasciò
+lasciï¿½
 lasso
 le
 legge
@@ -523,7 +523,7 @@ lui
 lume
 lungo
 lupa
-là
+lï¿½
 ma
 macolato
 maestro
@@ -550,7 +550,7 @@ montava
 monte
 morir
 morte
-morì
+morï¿½
 mosse
 mpedisce
 mpediva
@@ -567,7 +567,7 @@ non
 nostra
 notte
 nvidia
-né
+nï¿½
 occhi
 od
 offerto
@@ -593,7 +593,7 @@ passai
 passar
 passo
 pasto
-patrïa
+patrï¿½a
 paura
 peggio
 pel
@@ -604,7 +604,7 @@ pensier
 penso
 per
 perch
-perché
+perchï¿½
 perdei
 perder
 perigliosa
@@ -615,8 +615,8 @@ piange
 pien
 pieta
 pietro
-piè
-più
+piï¿½
+piï¿½
 poco
 poeta
 poeti
@@ -675,10 +675,10 @@ salire
 salute
 san
 sanza
-sapïenza
+sapï¿½enza
 saranno
-sarà
-sarò
+sarï¿½
+sarï¿½
 scorte
 se
 seconda
@@ -716,8 +716,8 @@ sub
 sue
 suoi
 superbo
-sì
-sù
+sï¿½
+sï¿½
 tace
 tal
 tant
@@ -771,7 +771,7 @@ venne
 verace
 vergine
 vergognosa
-verrà
+verrï¿½
 vestite
 vi
 via
@@ -796,6 +796,6 @@ volume
 vorrai
 vuo
 vuol
-vïaggio
-vòlto
-èi
+vï¿½aggio
+vï¿½lto
+ï¿½i
