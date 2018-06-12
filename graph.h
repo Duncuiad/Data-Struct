@@ -4,7 +4,7 @@
 #include  <stdio.h>
 
 #include "essentials.h"
-#include "string.h"
+#include "relations.h"
 
 typedef struct _Graph Graph;
 

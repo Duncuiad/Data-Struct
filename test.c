@@ -14,7 +14,7 @@ int main() {
 
   constrGraph(&grafo);
 
-  loadGraph(&grafo, "./files/Esempio.dat");
+  importGraph(&grafo, "./files/Canto1.txt");
 
   n = grafo.nodeCount;
 

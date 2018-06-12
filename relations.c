@@ -1,4 +1,4 @@
-#include "string.h"
+#include "relations.h"
 
 Bool areRelated(const char *firstWord, const char *secondWord) {
 
