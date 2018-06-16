@@ -51,7 +51,7 @@ int main(int argc, char **argv) {
   fprintf(soluzione, "%d parole con %d legami\n", grafo.nodeCount, grafo.edgeCount);
 
   for (i = m; i >= 0; i--) {
-    fprintf(soluzione, "%d parole di grado %d\n", contGradi[i], i);
+    fprintf(soluzione, "%d parol%s di grado %d\n", contGradi[i], (contGradi[i] == 1? "a" : "e"), i);
   }
 
   fprintf(soluzione, "%d componenti\n", grafo.componentCount);

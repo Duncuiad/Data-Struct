@@ -1,0 +1,27 @@
+15 parole con 11 legami
+1 parola di grado 3
+7 parole di grado 2
+5 parole di grado 1
+2 parole di grado 0
+6 componenti
+Componente 1: 5 parole da cane a vane (diametro 3)
+Componente 2: 3 parole da pilata a pirata (diametro 2)
+Componente 3: 3 parole da melo a velo (diametro 1)
+Componente 4: 2 parole da brutto a rutto (diametro 1)
+Componente 5: 1 parole da pineta a pineta (diametro 0)
+Componente 6: 1 parole da vaso a vaso (diametro 0)
+brutto
+cane
+casa
+case
+melo
+pelo
+pilata
+pilota
+pineta
+pirata
+rane
+rutto
+vane
+vaso
+velo

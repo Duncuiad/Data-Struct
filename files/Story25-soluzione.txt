@@ -1,0 +1,858 @@
+533 parole con 326 legami
+1 parola di grado 11
+0 parole di grado 10
+3 parole di grado 9
+0 parole di grado 8
+8 parole di grado 7
+10 parole di grado 6
+14 parole di grado 5
+25 parole di grado 4
+46 parole di grado 3
+46 parole di grado 2
+98 parole di grado 1
+282 parole di grado 0
+311 componenti
+Componente 1: 163 parole da ad a yours (diametro 15)
+Componente 2: 10 parole da lie a wife (diametro 7)
+Componente 3: 8 parole da cold a wouldn (diametro 4)
+Componente 4: 6 parole da cover a over (diametro 4)
+Componente 5: 6 parole da back a jack (diametro 3)
+Componente 6: 5 parole da fine a nine (diametro 4)
+Componente 7: 5 parole da bright a tight (diametro 2)
+Componente 8: 4 parole da just a must (diametro 3)
+Componente 9: 3 parole da made a take (diametro 2)
+Componente 10: 3 parole da want a went (diametro 2)
+Componente 11: 2 parole da been a beer (diametro 1)
+Componente 12: 2 parole da belong a belongs (diametro 1)
+Componente 13: 2 parole da blonde a blondes (diametro 1)
+Componente 14: 2 parole da bowl a bowls (diametro 1)
+Componente 15: 2 parole da clean a clear (diametro 1)
+Componente 16: 2 parole da did a didn (diametro 1)
+Componente 17: 2 parole da eyes a yes (diametro 1)
+Componente 18: 2 parole da feet a felt (diametro 1)
+Componente 19: 2 parole da fighter a fighters (diametro 1)
+Componente 20: 2 parole da flesh a fresh (diametro 1)
+Componente 21: 2 parole da have a haven (diametro 1)
+Componente 22: 2 parole da lick a pick (diametro 1)
+Componente 23: 2 parole da lumberjack a lumberjacks (diametro 1)
+Componente 24: 2 parole da other a others (diametro 1)
+Componente 25: 2 parole da smile a smiled (diametro 1)
+Componente 26: 2 parole da smoke a spoke (diametro 1)
+Componente 27: 2 parole da steve a stove (diametro 1)
+Componente 28: 2 parole da though a thought (diametro 1)
+Componente 29: 2 parole da woman a women (diametro 1)
+Componente 30: 1 parole da 358 a 358 (diametro 0)
+Componente 31: 1 parole da about a about (diametro 0)
+Componente 32: 1 parole da across a across (diametro 0)
+Componente 33: 1 parole da acted a acted (diametro 0)
+Componente 34: 1 parole da again a again (diametro 0)
+Componente 35: 1 parole da against a against (diametro 0)
+Componente 36: 1 parole da alice a alice (diametro 0)
+Componente 37: 1 parole da always a always (diametro 0)
+Componente 38: 1 parole da answer a answer (diametro 0)
+Componente 39: 1 parole da anything a anything (diametro 0)
+Componente 40: 1 parole da anywhere a anywhere (diametro 0)
+Componente 41: 1 parole da asked a asked (diametro 0)
+Componente 42: 1 parole da bartender a bartender (diametro 0)
+Componente 43: 1 parole da bashful a bashful (diametro 0)
+Componente 44: 1 parole da bastard a bastard (diametro 0)
+Componente 45: 1 parole da beat a beat (diametro 0)
+Componente 46: 1 parole da beautiful a beautiful (diametro 0)
+Componente 47: 1 parole da because a because (diametro 0)
+Componente 48: 1 parole da before a before (diametro 0)
+Componente 49: 1 parole da began a began (diametro 0)
+Componente 50: 1 parole da beginning a beginning (diametro 0)
+Componente 51: 1 parole da believe a believe (diametro 0)
+Componente 52: 1 parole da bench a bench (diametro 0)
+Componente 53: 1 parole da besides a besides (diametro 0)
+Componente 54: 1 parole da better a better (diametro 0)
+Componente 55: 1 parole da big a big (diametro 0)
+Componente 56: 1 parole da biggest a biggest (diametro 0)
+Componente 57: 1 parole da bitch a bitch (diametro 0)
+Componente 58: 1 parole da body a body (diametro 0)
+Componente 59: 1 parole da both a both (diametro 0)
+Componente 60: 1 parole da bottle a bottle (diametro 0)
+Componente 61: 1 parole da bound a bound (diametro 0)
+Componente 62: 1 parole da boys a boys (diametro 0)
+Componente 63: 1 parole da cadillac a cadillac (diametro 0)
+Componente 64: 1 parole da career a career (diametro 0)
+Componente 65: 1 parole da cents a cents (diametro 0)
+Componente 66: 1 parole da certainly a certainly (diametro 0)
+Componente 67: 1 parole da change a change (diametro 0)
+Componente 68: 1 parole da changeable a changeable (diametro 0)
+Componente 69: 1 parole da christ a christ (diametro 0)
+Componente 70: 1 parole da coast a coast (diametro 0)
+Componente 71: 1 parole da colours a colours (diametro 0)
+Componente 72: 1 parole da commenced a commenced (diametro 0)
+Componente 73: 1 parole da complacently a complacently (diametro 0)
+Componente 74: 1 parole da crowded a crowded (diametro 0)
+Componente 75: 1 parole da crying a crying (diametro 0)
+Componente 76: 1 parole da decent a decent (diametro 0)
+Componente 77: 1 parole da decently a decently (diametro 0)
+Componente 78: 1 parole da declared a declared (diametro 0)
+Componente 79: 1 parole da difference a difference (diametro 0)
+Componente 80: 1 parole da dignified a dignified (diametro 0)
+Componente 81: 1 parole da dinge a dinge (diametro 0)
+Componente 82: 1 parole da dirty a dirty (diametro 0)
+Componente 83: 1 parole da disgust a disgust (diametro 0)
+Componente 84: 1 parole da dishwater a dishwater (diametro 0)
+Componente 85: 1 parole da doesn a doesn (diametro 0)
+Componente 86: 1 parole da door a door (diametro 0)
+Componente 87: 1 parole da drawback a drawback (diametro 0)
+Componente 88: 1 parole da dresses a dresses (diametro 0)
+Componente 89: 1 parole da drew a drew (diametro 0)
+Componente 90: 1 parole da dried a dried (diametro 0)
+Componente 91: 1 parole da drunk a drunk (diametro 0)
+Componente 92: 1 parole da edges a edges (diametro 0)
+Componente 93: 1 parole da else a else (diametro 0)
+Componente 94: 1 parole da embarrassing a embarrassing (diametro 0)
+Componente 95: 1 parole da est a est (diametro 0)
+Componente 96: 1 parole da ethel a ethel (diametro 0)
+Componente 97: 1 parole da everybody a everybody (diametro 0)
+Componente 98: 1 parole da everyone a everyone (diametro 0)
+Componente 99: 1 parole da everything a everything (diametro 0)
+Componente 100: 1 parole da exactly a exactly (diametro 0)
+Componente 101: 1 parole da except a except (diametro 0)
+Componente 102: 1 parole da face a face (diametro 0)
+Componente 103: 1 parole da fast a fast (diametro 0)
+Componente 104: 1 parole da father a father (diametro 0)
+Componente 105: 1 parole da fifty a fifty (diametro 0)
+Componente 106: 1 parole da finest a finest (diametro 0)
+Componente 107: 1 parole da floor a floor (diametro 0)
+Componente 108: 1 parole da fluke a fluke (diametro 0)
+Componente 109: 1 parole da forward a forward (diametro 0)
+Componente 110: 1 parole da frances a frances (diametro 0)
+Componente 111: 1 parole da free a free (diametro 0)
+Componente 112: 1 parole da freezing a freezing (diametro 0)
+Componente 113: 1 parole da friendly a friendly (diametro 0)
+Componente 114: 1 parole da friends a friends (diametro 0)
+Componente 115: 1 parole da from a from (diametro 0)
+Componente 116: 1 parole da full a full (diametro 0)
+Componente 117: 1 parole da funny a funny (diametro 0)
+Componente 118: 1 parole da getting a getting (diametro 0)
+Componente 119: 1 parole da girls a girls (diametro 0)
+Componente 120: 1 parole da glass a glass (diametro 0)
+Componente 121: 1 parole da goddam a goddam (diametro 0)
+Componente 122: 1 parole da goddamned a goddamned (diametro 0)
+Componente 123: 1 parole da going a going (diametro 0)
+Componente 124: 1 parole da great a great (diametro 0)
+Componente 125: 1 parole da greatest a greatest (diametro 0)
+Componente 126: 1 parole da happily a happily (diametro 0)
+Componente 127: 1 parole da hardly a hardly (diametro 0)
+Componente 128: 1 parole da having a having (diametro 0)
+Componente 129: 1 parole da hazel a hazel (diametro 0)
+Componente 130: 1 parole da hides a hides (diametro 0)
+Componente 131: 1 parole da high a high (diametro 0)
+Componente 132: 1 parole da himself a himself (diametro 0)
+Componente 133: 1 parole da holding a holding (diametro 0)
+Componente 134: 1 parole da hope a hope (diametro 0)
+Componente 135: 1 parole da huge a huge (diametro 0)
+Componente 136: 1 parole da hundred a hundred (diametro 0)
+Componente 137: 1 parole da hurt a hurt (diametro 0)
+Componente 138: 1 parole da husband a husband (diametro 0)
+Componente 139: 1 parole da idea a idea (diametro 0)
+Componente 140: 1 parole da impossible a impossible (diametro 0)
+Componente 141: 1 parole da indians a indians (diametro 0)
+Componente 142: 1 parole da insult a insult (diametro 0)
+Componente 143: 1 parole da interested a interested (diametro 0)
+Componente 144: 1 parole da interfere a interfere (diametro 0)
+Componente 145: 1 parole da jesus a jesus (diametro 0)
+Componente 146: 1 parole da johnson a johnson (diametro 0)
+Componente 147: 1 parole da juice a juice (diametro 0)
+Componente 148: 1 parole da jumped a jumped (diametro 0)
+Componente 149: 1 parole da keep a keep (diametro 0)
+Componente 150: 1 parole da ketchel a ketchel (diametro 0)
+Componente 151: 1 parole da killed a killed (diametro 0)
+Componente 152: 1 parole da kind a kind (diametro 0)
+Componente 153: 1 parole da knock a knock (diametro 0)
+Componente 154: 1 parole da knocked a knocked (diametro 0)
+Componente 155: 1 parole da lads; a lads; (diametro 0)
+Componente 156: 1 parole da laugh a laugh (diametro 0)
+Componente 157: 1 parole da laughed a laughed (diametro 0)
+Componente 158: 1 parole da laughing a laughing (diametro 0)
+Componente 159: 1 parole da layed a layed (diametro 0)
+Componente 160: 1 parole da leave a leave (diametro 0)
+Componente 161: 1 parole da lemon a lemon (diametro 0)
+Componente 162: 1 parole da liar a liar (diametro 0)
+Componente 163: 1 parole da lightning a lightning (diametro 0)
+Componente 164: 1 parole da lips a lips (diametro 0)
+Componente 165: 1 parole da listen a listen (diametro 0)
+Componente 166: 1 parole da listened a listened (diametro 0)
+Componente 167: 1 parole da little a little (diametro 0)
+Componente 168: 1 parole da lona a lona (diametro 0)
+Componente 169: 1 parole da looked a looked (diametro 0)
+Componente 170: 1 parole da looking a looking (diametro 0)
+Componente 171: 1 parole da loud a loud (diametro 0)
+Componente 172: 1 parole da lovely a lovely (diametro 0)
+Componente 173: 1 parole da lumbermen a lumbermen (diametro 0)
+Componente 174: 1 parole da lunch a lunch (diametro 0)
+Componente 175: 1 parole da mackinaw a mackinaw (diametro 0)
+Componente 176: 1 parole da mance a mance (diametro 0)
+Componente 177: 1 parole da married a married (diametro 0)
+Componente 178: 1 parole da mary a mary (diametro 0)
+Componente 179: 1 parole da matter a matter (diametro 0)
+Componente 180: 1 parole da memories a memories (diametro 0)
+Componente 181: 1 parole da money a money (diametro 0)
+Componente 182: 1 parole da mossbacks a mossbacks (diametro 0)
+Componente 183: 1 parole da mountain a mountain (diametro 0)
+Componente 184: 1 parole da mouth a mouth (diametro 0)
+Componente 185: 1 parole da moving a moving (diametro 0)
+Componente 186: 1 parole da much a much (diametro 0)
+Componente 187: 1 parole da nearly a nearly (diametro 0)
+Componente 188: 1 parole da needed a needed (diametro 0)
+Componente 189: 1 parole da nickel a nickel (diametro 0)
+Componente 190: 1 parole da nigger a nigger (diametro 0)
+Componente 191: 1 parole da nineteen a nineteen (diametro 0)
+Componente 192: 1 parole da ninety a ninety (diametro 0)
+Componente 193: 1 parole da nobody a nobody (diametro 0)
+Componente 194: 1 parole da nodded a nodded (diametro 0)
+Componente 195: 1 parole da nothing a nothing (diametro 0)
+Componente 196: 1 parole da only a only (diametro 0)
+Componente 197: 1 parole da ordinary a ordinary (diametro 0)
+Componente 198: 1 parole da outside a outside (diametro 0)
+Componente 199: 1 parole da papers a papers (diametro 0)
+Componente 200: 1 parole da peroxide a peroxide (diametro 0)
+Componente 201: 1 parole da pickled a pickled (diametro 0)
+Componente 202: 1 parole da pictures a pictures (diametro 0)
+Componente 203: 1 parole da piece a piece (diametro 0)
+Componente 204: 1 parole da pigs a pigs (diametro 0)
+Componente 205: 1 parole da piles a piles (diametro 0)
+Componente 206: 1 parole da place a place (diametro 0)
+Componente 207: 1 parole da placid a placid (diametro 0)
+Componente 208: 1 parole da platform a platform (diametro 0)
+Componente 209: 1 parole da pounds a pounds (diametro 0)
+Componente 210: 1 parole da prettiest a prettiest (diametro 0)
+Componente 211: 1 parole da pretty a pretty (diametro 0)
+Componente 212: 1 parole da proudly a proudly (diametro 0)
+Componente 213: 1 parole da puddles a puddles (diametro 0)
+Componente 214: 1 parole da pulled a pulled (diametro 0)
+Componente 215: 1 parole da punks a punks (diametro 0)
+Componente 216: 1 parole da pushed a pushed (diametro 0)
+Componente 217: 1 parole da quickly a quickly (diametro 0)
+Componente 218: 1 parole da quiet a quiet (diametro 0)
+Componente 219: 1 parole da reached a reached (diametro 0)
+Componente 220: 1 parole da really a really (diametro 0)
+Componente 221: 1 parole da regular a regular (diametro 0)
+Componente 222: 1 parole da remember a remember (diametro 0)
+Componente 223: 1 parole da respectful a respectful (diametro 0)
+Componente 224: 1 parole da rubbers a rubbers (diametro 0)
+Componente 225: 1 parole da sawdust a sawdust (diametro 0)
+Componente 226: 1 parole da scissors a scissors (diametro 0)
+Componente 227: 1 parole da seemed a seemed (diametro 0)
+Componente 228: 1 parole da sense a sense (diametro 0)
+Componente 229: 1 parole da seventeen a seventeen (diametro 0)
+Componente 230: 1 parole da shake a shake (diametro 0)
+Componente 231: 1 parole da shaking a shaking (diametro 0)
+Componente 232: 1 parole da shirt a shirt (diametro 0)
+Componente 233: 1 parole da shook a shook (diametro 0)
+Componente 234: 1 parole da should a should (diametro 0)
+Componente 235: 1 parole da side a side (diametro 0)
+Componente 236: 1 parole da silk a silk (diametro 0)
+Componente 237: 1 parole da sister a sister (diametro 0)
+Componente 238: 1 parole da sitting a sitting (diametro 0)
+Componente 239: 1 parole da six a six (diametro 0)
+Componente 240: 1 parole da sixty a sixty (diametro 0)
+Componente 241: 1 parole da skin a skin (diametro 0)
+Componente 242: 1 parole da smelled a smelled (diametro 0)
+Componente 243: 1 parole da smooth a smooth (diametro 0)
+Componente 244: 1 parole da snickered a snickered (diametro 0)
+Componente 245: 1 parole da somebody a somebody (diametro 0)
+Componente 246: 1 parole da someone a someone (diametro 0)
+Componente 247: 1 parole da something a something (diametro 0)
+Componente 248: 1 parole da sort a sort (diametro 0)
+Componente 249: 1 parole da soul a soul (diametro 0)
+Componente 250: 1 parole da spatula a spatula (diametro 0)
+Componente 251: 1 parole da speak a speak (diametro 0)
+Componente 252: 1 parole da spender a spender (diametro 0)
+Componente 253: 1 parole da spit a spit (diametro 0)
+Componente 254: 1 parole da spitfire a spitfire (diametro 0)
+Componente 255: 1 parole da stagey a stagey (diametro 0)
+Componente 256: 1 parole da stagged a stagged (diametro 0)
+Componente 257: 1 parole da stale a stale (diametro 0)
+Componente 258: 1 parole da standing a standing (diametro 0)
+Componente 259: 1 parole da stanley a stanley (diametro 0)
+Componente 260: 1 parole da started a started (diametro 0)
+Componente 261: 1 parole da station a station (diametro 0)
+Componente 262: 1 parole da still a still (diametro 0)
+Componente 263: 1 parole da stink a stink (diametro 0)
+Componente 264: 1 parole da straightened a straightened (diametro 0)
+Componente 265: 1 parole da strike a strike (diametro 0)
+Componente 266: 1 parole da sure a sure (diametro 0)
+Componente 267: 1 parole da surprise a surprise (diametro 0)
+Componente 268: 1 parole da swear a swear (diametro 0)
+Componente 269: 1 parole da swedes a swedes (diametro 0)
+Componente 270: 1 parole da sweet a sweet (diametro 0)
+Componente 271: 1 parole da talked a talked (diametro 0)
+Componente 272: 1 parole da talking a talking (diametro 0)
+Componente 273: 1 parole da terribly a terribly (diametro 0)
+Componente 274: 1 parole da those a those (diametro 0)
+Componente 275: 1 parole da three a three (diametro 0)
+Componente 276: 1 parole da ticket a ticket (diametro 0)
+Componente 277: 1 parole da tiger a tiger (diametro 0)
+Componente 278: 1 parole da together a together (diametro 0)
+Componente 279: 1 parole da tommy a tommy (diametro 0)
+Componente 280: 1 parole da toward a toward (diametro 0)
+Componente 281: 1 parole da train a train (diametro 0)
+Componente 282: 1 parole da trick a trick (diametro 0)
+Componente 283: 1 parole da trigger a trigger (diametro 0)
+Componente 284: 1 parole da trousers a trousers (diametro 0)
+Componente 285: 1 parole da true a true (diametro 0)
+Componente 286: 1 parole da truly a truly (diametro 0)
+Componente 287: 1 parole da tubes a tubes (diametro 0)
+Componente 288: 1 parole da turned a turned (diametro 0)
+Componente 289: 1 parole da uncovered a uncovered (diametro 0)
+Componente 290: 1 parole da under a under (diametro 0)
+Componente 291: 1 parole da very a very (diametro 0)
+Componente 292: 1 parole da voice a voice (diametro 0)
+Componente 293: 1 parole da waiting a waiting (diametro 0)
+Componente 294: 1 parole da watching a watching (diametro 0)
+Componente 295: 1 parole da water a water (diametro 0)
+Componente 296: 1 parole da weighed a weighed (diametro 0)
+Componente 297: 1 parole da whether a whether (diametro 0)
+Componente 298: 1 parole da which a which (diametro 0)
+Componente 299: 1 parole da white a white (diametro 0)
+Componente 300: 1 parole da whitest a whitest (diametro 0)
+Componente 301: 1 parole da wilson a wilson (diametro 0)
+Componente 302: 1 parole da window a window (diametro 0)
+Componente 303: 1 parole da with a with (diametro 0)
+Componente 304: 1 parole da without a without (diametro 0)
+Componente 305: 1 parole da wolgast a wolgast (diametro 0)
+Componente 306: 1 parole da wonderful a wonderful (diametro 0)
+Componente 307: 1 parole da wooden a wooden (diametro 0)
+Componente 308: 1 parole da worked a worked (diametro 0)
+Componente 309: 1 parole da wrong a wrong (diametro 0)
+Componente 310: 1 parole da young a young (diametro 0)
+Componente 311: 1 parole da yourself a yourself (diametro 0)
+358
+about
+across
+acted
+ad
+again
+against
+alice
+all
+always
+and
+answer
+any
+anything
+anywhere
+are
+aren
+as
+ask
+asked
+at
+away
+back
+bar
+bark
+bartender
+bashful
+bastard
+be
+beat
+beautiful
+because
+been
+beer
+before
+began
+beginning
+believe
+belong
+belongs
+bench
+besides
+better
+big
+biggest
+bitch
+black
+blonde
+blondes
+body
+both
+bottle
+bound
+bowl
+bowls
+boys
+bright
+but
+by
+bye
+cadillac
+call
+calm
+came
+can
+cap
+care
+career
+cents
+certainly
+change
+changeable
+christ
+clean
+clear
+coast
+cold
+colours
+come
+commenced
+complacently
+cook
+could
+couldn
+cover
+covers
+crowded
+crying
+cut
+dark
+dead
+decent
+decently
+declared
+did
+didn
+difference
+dignified
+dinge
+dirty
+disgust
+dishwater
+do
+doesn
+dog
+don
+door
+down
+drawback
+dresses
+drew
+dried
+drunk
+edges
+else
+embarrassing
+end
+est
+ethel
+even
+ever
+everybody
+everyone
+everything
+exactly
+except
+eyes
+face
+fast
+father
+feet
+felt
+fifty
+fight
+fighter
+fighters
+fine
+finest
+five
+flesh
+floor
+fluke
+for
+fork
+forks
+forward
+four
+frances
+free
+freezing
+fresh
+friendly
+friends
+from
+full
+funny
+get
+getting
+girls
+give
+glass
+go
+god
+goddam
+goddamned
+going
+gone
+good
+got
+great
+greatest
+had
+hand
+hands
+happily
+hardly
+have
+haven
+having
+hay
+hazel
+he
+head
+heads
+held
+hell
+her
+here
+hides
+high
+him
+himself
+his
+hit
+ho
+holding
+hope
+hot
+how
+huge
+hundred
+hurt
+husband
+idea
+if
+impossible
+in
+indians
+ing
+insult
+interested
+interfere
+is
+isn
+it
+jack
+jesus
+jmy
+johnson
+juice
+jumped
+just
+keep
+ketchel
+killed
+kind
+knew
+knock
+knocked
+know
+lads;
+laugh
+laughed
+laughing
+layed
+leave
+lemon
+let
+liar
+lick
+lie
+life
+light
+lightning
+like
+likes
+lips
+listen
+listened
+little
+lived
+lives
+ll
+lona
+look
+looked
+looking
+lost
+loud
+love
+loved
+lovely
+low
+lt
+lumberjack
+lumberjacks
+lumbermen
+lunch
+mackinaw
+made
+make
+man
+mance
+married
+mary
+matter
+me
+memories
+men
+money
+more
+mossbacks
+most
+mountain
+mouth
+moved
+moving
+mow
+much
+must
+my
+name
+names
+nearly
+needed
+never
+nice
+nickel
+nigger
+nine
+nineteen
+ninety
+no
+nobody
+nodded
+not
+nothing
+now
+of
+off
+oh
+old
+on
+one
+ones
+only
+or
+ordinary
+other
+others
+our
+out
+outside
+over
+own
+paid
+papers
+peroxide
+pick
+pickled
+pictures
+piece
+pigs
+piles
+place
+placid
+platform
+pounds
+prettiest
+pretty
+proudly
+puddles
+pulled
+punks
+pus
+pushed
+put
+puts
+quickly
+quiet
+re
+reached
+read
+ready
+real
+really
+regular
+remember
+respectful
+right
+road
+rubbers
+rye
+sad
+said
+sat
+saw
+sawdust
+say
+says
+scissors
+see
+seemed
+sense
+seventeen
+shake
+shaking
+she
+shirt
+shook
+shot
+should
+shut
+shy
+side
+silk
+sister
+sitting
+six
+sixty
+skin
+slid
+smelled
+smile
+smiled
+smoke
+smooth
+snickered
+so
+some
+somebody
+someone
+something
+son
+sort
+soul
+spatula
+speak
+spender
+spit
+spitfire
+spoke
+stagey
+stagged
+stale
+standing
+stanley
+started
+station
+steve
+still
+stink
+stop
+stove
+straightened
+strike
+sure
+surprise
+swear
+swedes
+sweet
+take
+talked
+talking
+tan
+tell
+terribly
+th
+than
+thank
+that
+the
+them
+then
+there
+they
+thin
+thing
+this
+those
+though
+thought
+three
+ticket
+tiger
+tight
+tm
+to
+together
+told
+tom
+tommy
+too
+took
+top
+toward
+town
+train
+trick
+trigger
+trousers
+true
+truly
+tubes
+turned
+two
+uncovered
+under
+up
+us
+ve
+very
+voice
+waiting
+wall
+want
+wants
+was
+wasn
+watching
+water
+way
+we
+weighed
+well
+went
+were
+weren
+what
+when
+where
+whether
+which
+white
+whitest
+who
+whore
+whores
+wife
+will
+wilson
+window
+with
+without
+wolgast
+woman
+women
+won
+wonderful
+wood
+wooden
+wore
+worked
+world
+would
+wouldn
+wrong
+yes
+you
+young
+your
+yours
+yourself

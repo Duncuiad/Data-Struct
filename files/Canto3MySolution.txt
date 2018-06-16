@@ -1,0 +1,789 @@
+483 parole con 306 legami
+1 parole di grado 11
+2 parole di grado 10
+7 parole di grado 9
+6 parole di grado 8
+1 parole di grado 7
+4 parole di grado 6
+15 parole di grado 5
+18 parole di grado 4
+33 parole di grado 3
+46 parole di grado 2
+101 parole di grado 1
+249 parole di grado 0
+292 componenti
+Componente 1: 119 parole da ad a ïo (diametro 16)
+Componente 2: 7 parole da forte a sorte (diametro 3)
+Componente 3: 6 parole da bassa a passi (diametro 3)
+Componente 4: 6 parole da era a tra (diametro 3)
+Componente 5: 5 parole da alte a altri (diametro 3)
+Componente 6: 5 parole da denti a mente (diametro 3)
+Componente 7: 5 parole da questa a quete (diametro 2)
+Componente 8: 4 parole da breve a prave (diametro 3)
+Componente 9: 3 parole da belli a elli (diametro 2)
+Componente 10: 3 parole da colore a dolore (diametro 2)
+Componente 11: 3 parole da diede a piedi (diametro 2)
+Componente 12: 3 parole da par a però (diametro 2)
+Componente 13: 3 parole da ratta a tratta (diametro 2)
+Componente 14: 3 parole da seme a teme (diametro 2)
+Componente 15: 3 parole da ch a ché (diametro 1)
+Componente 16: 2 parole da alcun a alcuna (diametro 1)
+Componente 17: 2 parole da anima a anime (diametro 1)
+Componente 18: 2 parole da bagna a lagna (diametro 1)
+Componente 19: 2 parole da cattivi a cattivo (diametro 1)
+Componente 20: 2 parole da ciel a cielo (diametro 1)
+Componente 21: 2 parole da disse a dissi (diametro 1)
+Componente 22: 2 parole da etterne a etterno (diametro 1)
+Componente 23: 2 parole da fosse a mosse (diametro 1)
+Componente 24: 2 parole da gelo a pelo (diametro 1)
+Componente 25: 2 parole da gote a rote (diametro 1)
+Componente 26: 2 parole da hanno a vanno (diametro 1)
+Componente 27: 2 parole da lasciare a lasciate (diametro 1)
+Componente 28: 2 parole da legno a vegno (diametro 1)
+Componente 29: 2 parole da lieto a lito (diametro 1)
+Componente 30: 2 parole da luce a lume (diametro 1)
+Componente 31: 2 parole da mischiate a mischiato (diametro 1)
+Componente 32: 2 parole da molto a volto (diametro 1)
+Componente 33: 2 parole da ond a onda (diametro 1)
+Componente 34: 2 parole da parea a parer (diametro 1)
+Componente 35: 2 parole da perduta a perduto (diametro 1)
+Componente 36: 2 parole da pronte a pronti (diametro 1)
+Componente 37: 2 parole da puose a puote (diametro 1)
+Componente 38: 2 parole da ramo a remo (diametro 1)
+Componente 39: 2 parole da riguardai a riguardar (diametro 1)
+Componente 40: 2 parole da somma a sommo (diametro 1)
+Componente 41: 2 parole da trista a triste (diametro 1)
+Componente 42: 2 parole da tutte a tutti (diametro 1)
+Componente 43: 2 parole da vedrai a verrai (diametro 1)
+Componente 44: 1 parole da accennando a accennando (diametro 0)
+Componente 45: 1 parole da accenti a accenti (diametro 0)
+Componente 46: 1 parole da accorta a accorta (diametro 0)
+Componente 47: 1 parole da acheronte a acheronte (diametro 0)
+Componente 48: 1 parole da adagia a adagia (diametro 0)
+Componente 49: 1 parole da adamo a adamo (diametro 0)
+Componente 50: 1 parole da aere a aere (diametro 0)
+Componente 51: 1 parole da aggira a aggira (diametro 0)
+Componente 52: 1 parole da allor a allor (diametro 0)
+Componente 53: 1 parole da amore a amore (diametro 0)
+Componente 54: 1 parole da anche a anche (diametro 0)
+Componente 55: 1 parole da ancor a ancor (diametro 0)
+Componente 56: 1 parole da angeli a angeli (diametro 0)
+Componente 57: 1 parole da antico a antico (diametro 0)
+Componente 58: 1 parole da appresso a appresso (diametro 0)
+Componente 59: 1 parole da attende a attende (diametro 0)
+Componente 60: 1 parole da augel a augel (diametro 0)
+Componente 61: 1 parole da autunno a autunno (diametro 0)
+Componente 62: 1 parole da avanti a avanti (diametro 0)
+Componente 63: 1 parole da avea a avea (diametro 0)
+Componente 64: 1 parole da averei a averei (diametro 0)
+Componente 65: 1 parole da avesse a avesse (diametro 0)
+Componente 66: 1 parole da avrebber a avrebber (diametro 0)
+Componente 67: 1 parole da balenò a balenò (diametro 0)
+Componente 68: 1 parole da batte a batte (diametro 0)
+Componente 69: 1 parole da bestemmiavano a bestemmiavano (diametro 0)
+Componente 70: 1 parole da bianco a bianco (diametro 0)
+Componente 71: 1 parole da bragia a bragia (diametro 0)
+Componente 72: 1 parole da bruna a bruna (diametro 0)
+Componente 73: 1 parole da buia a buia (diametro 0)
+Componente 74: 1 parole da caccianli a caccianli (diametro 0)
+Componente 75: 1 parole da caddi a caddi (diametro 0)
+Componente 76: 1 parole da caldo a caldo (diametro 0)
+Componente 77: 1 parole da campagna a campagna (diametro 0)
+Componente 78: 1 parole da cangiar a cangiar (diametro 0)
+Componente 79: 1 parole da caron a caron (diametro 0)
+Componente 80: 1 parole da cenni a cenni (diametro 0)
+Componente 81: 1 parole da certo a certo (diametro 0)
+Componente 82: 1 parole da ciascun a ciascun (diametro 0)
+Componente 83: 1 parole da cieca a cieca (diametro 0)
+Componente 84: 1 parole da città a città (diametro 0)
+Componente 85: 1 parole da ciò a ciò (diametro 0)
+Componente 86: 1 parole da colui a colui (diametro 0)
+Componente 87: 1 parole da cominciar a cominciar (diametro 0)
+Componente 88: 1 parole da concedi a concedi (diametro 0)
+Componente 89: 1 parole da confortai a confortai (diametro 0)
+Componente 90: 1 parole da conobbi a conobbi (diametro 0)
+Componente 91: 1 parole da conte a conte (diametro 0)
+Componente 92: 1 parole da convegnon a convegnon (diametro 0)
+Componente 93: 1 parole da convien a convien (diametro 0)
+Componente 94: 1 parole da correva a correva (diametro 0)
+Componente 95: 1 parole da cortese a cortese (diametro 0)
+Componente 96: 1 parole da costume a costume (diametro 0)
+Componente 97: 1 parole da cotesti a cotesti (diametro 0)
+Componente 98: 1 parole da create a create (diametro 0)
+Componente 99: 1 parole da creduto a creduto (diametro 0)
+Componente 100: 1 parole da crucciare a crucciare (diametro 0)
+Componente 101: 1 parole da crude a crude (diametro 0)
+Componente 102: 1 parole da dentro a dentro (diametro 0)
+Componente 103: 1 parole da detto a detto (diametro 0)
+Componente 104: 1 parole da dibattero a dibattero (diametro 0)
+Componente 105: 1 parole da dicerolti a dicerolti (diametro 0)
+Componente 106: 1 parole da dietro a dietro (diametro 0)
+Componente 107: 1 parole da dimandare a dimandare (diametro 0)
+Componente 108: 1 parole da dimonio a dimonio (diametro 0)
+Componente 109: 1 parole da dinanzi a dinanzi (diametro 0)
+Componente 110: 1 parole da discerno a discerno (diametro 0)
+Componente 111: 1 parole da discese a discese (diametro 0)
+Componente 112: 1 parole da disfatta a disfatta (diametro 0)
+Componente 113: 1 parole da disio a disio (diametro 0)
+Componente 114: 1 parole da diverse a diverse (diametro 0)
+Componente 115: 1 parole da divina a divina (diametro 0)
+Componente 116: 1 parole da dolente a dolente (diametro 0)
+Componente 117: 1 parole da dolorose a dolorose (diametro 0)
+Componente 118: 1 parole da dove a dove (diametro 0)
+Componente 119: 1 parole da duca a duca (diametro 0)
+Componente 120: 1 parole da duol a duol (diametro 0)
+Componente 121: 1 parole da duro a duro (diametro 0)
+Componente 122: 1 parole da ebbi a ebbi (diametro 0)
+Componente 123: 1 parole da ecco a ecco (diametro 0)
+Componente 124: 1 parole da error a error (diametro 0)
+Componente 125: 1 parole da esser a esser (diametro 0)
+Componente 126: 1 parole da facevano a facevano (diametro 0)
+Componente 127: 1 parole da fama a fama (diametro 0)
+Componente 128: 1 parole da fastidiosi a fastidiosi (diametro 0)
+Componente 129: 1 parole da fattore a fattore (diametro 0)
+Componente 130: 1 parole da favelle a favelle (diametro 0)
+Componente 131: 1 parole da fece a fece (diametro 0)
+Componente 132: 1 parole da fecemi a fecemi (diametro 0)
+Componente 133: 1 parole da fedeli a fedeli (diametro 0)
+Componente 134: 1 parole da fermerem a fermerem (diametro 0)
+Componente 135: 1 parole da fiamme a fiamme (diametro 0)
+Componente 136: 1 parole da fier a fier (diametro 0)
+Componente 137: 1 parole da figliuol a figliuol (diametro 0)
+Componente 138: 1 parole da finito a finito (diametro 0)
+Componente 139: 1 parole da fioche a fioche (diametro 0)
+Componente 140: 1 parole da fioco a fioco (diametro 0)
+Componente 141: 1 parole da fiume a fiume (diametro 0)
+Componente 142: 1 parole da foglie a foglie (diametro 0)
+Componente 143: 1 parole da furon a furon (diametro 0)
+Componente 144: 1 parole da girando a girando (diametro 0)
+Componente 145: 1 parole da gittansi a gittansi (diametro 0)
+Componente 146: 1 parole da giustizia a giustizia (diametro 0)
+Componente 147: 1 parole da gloria a gloria (diametro 0)
+Componente 148: 1 parole da gridando a gridando (diametro 0)
+Componente 149: 1 parole da guai a guai (diametro 0)
+Componente 150: 1 parole da guarda a guarda (diametro 0)
+Componente 151: 1 parole da ignudi a ignudi (diametro 0)
+Componente 152: 1 parole da incontanente a incontanente (diametro 0)
+Componente 153: 1 parole da indegna a indegna (diametro 0)
+Componente 154: 1 parole da inferno a inferno (diametro 0)
+Componente 155: 1 parole da infino a infino (diametro 0)
+Componente 156: 1 parole da insieme a insieme (diametro 0)
+Componente 157: 1 parole da intelletto a intelletto (diametro 0)
+Componente 158: 1 parole da intesi a intesi (diametro 0)
+Componente 159: 1 parole da intrate a intrate (diametro 0)
+Componente 160: 1 parole da isperate a isperate (diametro 0)
+Componente 161: 1 parole da lagrimai a lagrimai (diametro 0)
+Componente 162: 1 parole da lagrime a lagrime (diametro 0)
+Componente 163: 1 parole da lagrimosa a lagrimosa (diametro 0)
+Componente 164: 1 parole da lamentar a lamentar (diametro 0)
+Componente 165: 1 parole da lanose a lanose (diametro 0)
+Componente 166: 1 parole da levan a levan (diametro 0)
+Componente 167: 1 parole da lieve a lieve (diametro 0)
+Componente 168: 1 parole da lingue a lingue (diametro 0)
+Componente 169: 1 parole da livida a livida (diametro 0)
+Componente 170: 1 parole da lunga a lunga (diametro 0)
+Componente 171: 1 parole da maestro a maestro (diametro 0)
+Componente 172: 1 parole da malvagia a malvagia (diametro 0)
+Componente 173: 1 parole da menarvi a menarvi (diametro 0)
+Componente 174: 1 parole da mise a mise (diametro 0)
+Componente 175: 1 parole da misericordia a misericordia (diametro 0)
+Componente 176: 1 parole da misero a misero (diametro 0)
+Componente 177: 1 parole da mosconi a mosconi (diametro 0)
+Componente 178: 1 parole da muoion a muoion (diametro 0)
+Componente 179: 1 parole da nascimenti a nascimenti (diametro 0)
+Componente 180: 1 parole da nave a nave (diametro 0)
+Componente 181: 1 parole da nemici a nemici (diametro 0)
+Componente 182: 1 parole da nfamia a nfamia (diametro 0)
+Componente 183: 1 parole da nocchier a nocchier (diametro 0)
+Componente 184: 1 parole da nostri a nostri (diametro 0)
+Componente 185: 1 parole da nsegna a nsegna (diametro 0)
+Componente 186: 1 parole da nteser a nteser (diametro 0)
+Componente 187: 1 parole da ntorno a ntorno (diametro 0)
+Componente 188: 1 parole da nude a nude (diametro 0)
+Componente 189: 1 parole da nuova a nuova (diametro 0)
+Componente 190: 1 parole da nvidïosi a nvidïosi (diametro 0)
+Componente 191: 1 parole da occhi a occhi (diametro 0)
+Componente 192: 1 parole da ogne a ogne (diametro 0)
+Componente 193: 1 parole da oltre a oltre (diametro 0)
+Componente 194: 1 parole da ombra a ombra (diametro 0)
+Componente 195: 1 parole da orribili a orribili (diametro 0)
+Componente 196: 1 parole da oscuro a oscuro (diametro 0)
+Componente 197: 1 parole da paese a paese (diametro 0)
+Componente 198: 1 parole da palude a palude (diametro 0)
+Componente 199: 1 parole da parenti a parenti (diametro 0)
+Componente 200: 1 parole da parlar a parlar (diametro 0)
+Componente 201: 1 parole da parole a parole (diametro 0)
+Componente 202: 1 parole da partiva a partiva (diametro 0)
+Componente 203: 1 parole da passare a passare (diametro 0)
+Componente 204: 1 parole da persona a persona (diametro 0)
+Componente 205: 1 parole da piaggia a piaggia (diametro 0)
+Componente 206: 1 parole da piangendo a piangendo (diametro 0)
+Componente 207: 1 parole da pianti a pianti (diametro 0)
+Componente 208: 1 parole da piglia a piglia (diametro 0)
+Componente 209: 1 parole da più a più (diametro 0)
+Componente 210: 1 parole da podestate a podestate (diametro 0)
+Componente 211: 1 parole da posa a posa (diametro 0)
+Componente 212: 1 parole da poscia a poscia (diametro 0)
+Componente 213: 1 parole da primo a primo (diametro 0)
+Componente 214: 1 parole da profondo a profondo (diametro 0)
+Componente 215: 1 parole da pàrtiti a pàrtiti (diametro 0)
+Componente 216: 1 parole da qualunque a qualunque (diametro 0)
+Componente 217: 1 parole da quando a quando (diametro 0)
+Componente 218: 1 parole da quante a quante (diametro 0)
+Componente 219: 1 parole da quinci a quinci (diametro 0)
+Componente 220: 1 parole da quivi a quivi (diametro 0)
+Componente 221: 1 parole da raccoglie a raccoglie (diametro 0)
+Componente 222: 1 parole da ragioniam a ragioniam (diametro 0)
+Componente 223: 1 parole da rei a rei (diametro 0)
+Componente 224: 1 parole da rena a rena (diametro 0)
+Componente 225: 1 parole da ribelli a ribelli (diametro 0)
+Componente 226: 1 parole da riceve a riceve (diametro 0)
+Componente 227: 1 parole da richiamo a richiamo (diametro 0)
+Componente 228: 1 parole da ricolto a ricolto (diametro 0)
+Componente 229: 1 parole da riconosciuto a riconosciuto (diametro 0)
+Componente 230: 1 parole da rifiuto a rifiuto (diametro 0)
+Componente 231: 1 parole da rigavan a rigavan (diametro 0)
+Componente 232: 1 parole da risonavan a risonavan (diametro 0)
+Componente 233: 1 parole da rispuose a rispuose (diametro 0)
+Componente 234: 1 parole da ritrasser a ritrasser (diametro 0)
+Componente 235: 1 parole da riviera a riviera (diametro 0)
+Componente 236: 1 parole da sangue a sangue (diametro 0)
+Componente 237: 1 parole da sanza a sanza (diametro 0)
+Componente 238: 1 parole da sapere a sapere (diametro 0)
+Componente 239: 1 parole da sappia a sappia (diametro 0)
+Componente 240: 1 parole da sapïenza a sapïenza (diametro 0)
+Componente 241: 1 parole da schiera a schiera (diametro 0)
+Componente 242: 1 parole da sciaurati a sciaurati (diametro 0)
+Componente 243: 1 parole da scritte a scritte (diametro 0)
+Componente 244: 1 parole da sdegna a sdegna (diametro 0)
+Componente 245: 1 parole da segrete a segrete (diametro 0)
+Componente 246: 1 parole da semenza a semenza (diametro 0)
+Componente 247: 1 parole da sempre a sempre (diametro 0)
+Componente 248: 1 parole da senso a senso (diametro 0)
+Componente 249: 1 parole da sentimento a sentimento (diametro 0)
+Componente 250: 1 parole da setta a setta (diametro 0)
+Componente 251: 1 parole da similemente a similemente (diametro 0)
+Componente 252: 1 parole da sospetto a sospetto (diametro 0)
+Componente 253: 1 parole da sospiri a sospiri (diametro 0)
+Componente 254: 1 parole da spavento a spavento (diametro 0)
+Componente 255: 1 parole da speranza a speranza (diametro 0)
+Componente 256: 1 parole da spezie a spezie (diametro 0)
+Componente 257: 1 parole da spiacenti a spiacenti (diametro 0)
+Componente 258: 1 parole da spira a spira (diametro 0)
+Componente 259: 1 parole da spoglie a spoglie (diametro 0)
+Componente 260: 1 parole da sprona a sprona (diametro 0)
+Componente 261: 1 parole da stelle a stelle (diametro 0)
+Componente 262: 1 parole da stimolati a stimolati (diametro 0)
+Componente 263: 1 parole da sudore a sudore (diametro 0)
+Componente 264: 1 parole da tegnon a tegnon (diametro 0)
+Componente 265: 1 parole da temendo a temendo (diametro 0)
+Componente 266: 1 parole da tempo a tempo (diametro 0)
+Componente 267: 1 parole da tenebre a tenebre (diametro 0)
+Componente 268: 1 parole da terra a terra (diametro 0)
+Componente 269: 1 parole da testa a testa (diametro 0)
+Componente 270: 1 parole da trapassar a trapassar (diametro 0)
+Componente 271: 1 parole da trassi a trassi (diametro 0)
+Componente 272: 1 parole da tremò a tremò (diametro 0)
+Componente 273: 1 parole da tumulto a tumulto (diametro 0)
+Componente 274: 1 parole da turbo a turbo (diametro 0)
+Componente 275: 1 parole da umana a umana (diametro 0)
+Componente 276: 1 parole da vecchio a vecchio (diametro 0)
+Componente 277: 1 parole da venir a venir (diametro 0)
+Componente 278: 1 parole da vento a vento (diametro 0)
+Componente 279: 1 parole da venuti a venuti (diametro 0)
+Componente 280: 1 parole da venìa a venìa (diametro 0)
+Componente 281: 1 parole da vergognosi a vergognosi (diametro 0)
+Componente 282: 1 parole da vermi a vermi (diametro 0)
+Componente 283: 1 parole da vermiglia a vermiglia (diametro 0)
+Componente 284: 1 parole da verso a verso (diametro 0)
+Componente 285: 1 parole da vespe a vespe (diametro 0)
+Componente 286: 1 parole da viltade a viltade (diametro 0)
+Componente 287: 1 parole da viltà a viltà (diametro 0)
+Componente 288: 1 parole da vinse a vinse (diametro 0)
+Componente 289: 1 parole da visser a visser (diametro 0)
+Componente 290: 1 parole da volve a volve (diametro 0)
+Componente 291: 1 parole da vuole a vuole (diametro 0)
+Componente 292: 1 parole da vuolsi a vuolsi (diametro 0)
+accennando
+accenti
+accorta
+acheronte
+ad
+adagia
+adamo
+aere
+aggira
+al
+alcun
+alcuna
+allor
+alte
+alti
+alto
+altra
+altri
+amore
+anche
+ancor
+angeli
+anima
+anime
+antico
+appresso
+attende
+augel
+auna
+aura
+autunno
+avanti
+avea
+averei
+avesse
+avrebber
+bagna
+balenò
+bassa
+bassi
+batte
+belli
+ben
+bestemmiavano
+bianco
+bragia
+breve
+bruna
+buia
+buona
+caccianli
+caddi
+caldo
+campagna
+cangiar
+caron
+cattivi
+cattivo
+cenni
+certo
+ch
+che
+ché
+ciascun
+cieca
+ciel
+cielo
+cinta
+città
+ciò
+col
+colore
+coloro
+colui
+colà
+com
+come
+cominciar
+con
+concedi
+confortai
+conobbi
+conte
+convegnon
+convien
+coro
+correva
+cortese
+cose
+costume
+costì
+così
+cotesti
+create
+creduto
+crucciare
+crude
+cui
+da
+de
+del
+denti
+dentro
+detto
+di
+dibattero
+dicerolti
+diede
+diedi
+dietro
+dimandare
+dimonio
+dinanzi
+dio
+dir
+discerno
+discese
+disfatta
+disio
+disse
+dissi
+diverse
+divina
+dolente
+dolore
+dolorose
+dove
+duca
+duol
+duro
+ebbi
+ecco
+ed
+elle
+elli
+era
+eran
+erano
+error
+esser
+etterne
+etterno
+fa
+facevano
+fama
+fastidiosi
+fattore
+favelle
+fece
+fecemi
+fedeli
+fermerem
+fiamme
+fier
+figliuol
+fin
+finito
+fioche
+fioco
+fiume
+foglie
+forte
+fosse
+fui
+fuor
+fuoro
+fur
+furon
+gelo
+gent
+gente
+genti
+girando
+gittansi
+giustizia
+gloria
+gote
+gran
+grave
+greve
+gridando
+guai
+guarda
+hanno
+ho
+ignudi
+il
+in
+incontanente
+indegna
+inferno
+infino
+insieme
+intelletto
+intesi
+intrate
+io
+ira
+isperate
+ivi
+la
+lagna
+lagrimai
+lagrime
+lagrimosa
+lamentar
+lanose
+lasciare
+lasciate
+lassa
+lasse
+le
+legno
+levan
+li
+lieto
+lieve
+lingue
+lito
+livida
+lo
+loco
+lodo
+lor
+loro
+luce
+lui
+lume
+lunga
+là
+ma
+maestro
+mai
+mal
+malvagia
+man
+mano
+me
+men
+menarvi
+mente
+mi
+mia
+mio
+mischiate
+mischiato
+mise
+misericordia
+misero
+modo
+molto
+mondo
+morta
+morte
+morti
+mosconi
+mosse
+muoion
+nascimenti
+nave
+ne
+nel
+nemici
+nfamia
+no
+nocchier
+noi
+non
+nostri
+nsegna
+nteser
+ntorno
+nude
+nuova
+nvidïosi
+né
+occhi
+odo
+ogne
+oltre
+omai
+ombra
+ond
+onda
+or
+orribili
+oscuro
+ov
+paese
+palude
+par
+parea
+parenti
+parer
+parlar
+parole
+partiva
+passa
+passare
+passi
+pelo
+per
+perduta
+perduto
+persona
+però
+piaggia
+piangendo
+pianti
+piedi
+piglia
+più
+podestate
+poi
+porta
+porti
+posa
+poscia
+prave
+primo
+profondo
+pronte
+pronti
+puoi
+puose
+puote
+pàrtiti
+qua
+qual
+quali
+qualunque
+quando
+quante
+quel
+quell
+quelli
+questa
+queste
+questi
+questo
+quete
+qui
+quinci
+quivi
+raccoglie
+ragioniam
+ramo
+ratta
+ratto
+rei
+remo
+rena
+ribelli
+riceve
+richiamo
+ricolto
+riconosciuto
+rifiuto
+rigavan
+riguardai
+riguardar
+rio
+risonavan
+rispuose
+ritrasser
+riva
+riviera
+rote
+sangue
+sanza
+sapere
+sappia
+sapïenza
+schiera
+sciaurati
+scritte
+sdegna
+se
+segrete
+seme
+semenza
+sempre
+sen
+senso
+sentimento
+setta
+si
+sia
+siam
+sien
+similemente
+somma
+sommo
+son
+sonno
+sono
+sorte
+sospetto
+sospiri
+spavento
+speranza
+spezie
+spiacenti
+spira
+spoglie
+sprona
+stelle
+stimolati
+su
+sua
+sudore
+sue
+sui
+suo
+suon
+suona
+sé
+sì
+tanta
+tanto
+te
+tegnon
+tema
+teme
+temendo
+tempo
+tenebre
+terra
+testa
+ti
+tinta
+tra
+trapassar
+trassi
+tratta
+tremò
+trista
+triste
+tu
+tumulto
+turbo
+tutte
+tutti
+umana
+un
+una
+uom
+va
+vanno
+vecchio
+vede
+veder
+vedrai
+vegno
+venir
+vento
+venuti
+venìa
+vergognosi
+vermi
+vermiglia
+verrai
+verso
+vespe
+via
+vid
+vide
+vidi
+viltade
+viltà
+vinse
+vinta
+visser
+vita
+viva
+vivi
+voci
+voi
+volto
+volve
+vuole
+vuolsi
+ïo
