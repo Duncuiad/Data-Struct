@@ -61,8 +61,7 @@ void quickSort(int *array, int lower, int upper) {
 
 void quickSortComponents(Graph *graph, int lower, int upper) {
   /* lavora in-place */
-  /* prototipo: in realta' usero' solo le versioni specializzate per le componenti e per le parole */
-
+  /* funzione di confronto: comesBefore(Graph graph, int component1, int component2) */
   int lo = lower;
   int up = upper;
   Bool leftPivot = TRUE; /* TRUE se il pivot si trova in lo, FALSE se si trova in up */
@@ -122,8 +121,7 @@ void quickSortComponents(Graph *graph, int lower, int upper) {
 
 void quickSortWords(Graph *graph, int lower, int upper) {
   /* lavora in-place */
-  /* prototipo: in realta' usero' solo le versioni specializzate per le componenti e per le parole */
-
+  /* funzione di confronto: strcmp(char *string1, char *string2), libreria <string.h> */
   int lo = lower;
   int up = upper;
   Bool leftPivot = TRUE; /* TRUE se il pivot si trova in lo, FALSE se si trova in up */
