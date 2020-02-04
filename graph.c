@@ -18,6 +18,8 @@ void constrGraph(Graph *graph) {
   return;
 }
 
+//commento
+
 void destrGraph(Graph *graph) {
   int i;
   int n = graph -> nodeCount;

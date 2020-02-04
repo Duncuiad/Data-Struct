@@ -27,6 +27,8 @@ struct _Graph {
 
 };
 
+//commento
+
 /* METODI GRAPH */
 void constrGraph(Graph *graph);
 void destrGraph(Graph *graph);
